@@ -1,4 +1,4 @@
-# IxD Research Project Template
+# IxD Research Project: Eindhoven Convernance
 
 A clean, modern, and mobile-friendly template for creating academic project pages. This template is maintained by the [Fontys University of Applied Sciences' Interaction Design (IxD) Research Group](https://www.ixdfontysict.nl) to help students and researchers showcase their work effectively.
 
