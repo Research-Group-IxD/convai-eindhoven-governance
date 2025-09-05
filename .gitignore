@@ -1,0 +1,9 @@
+# VS Code
+.vscode/
+
+# Mac
+static/.DS_Store
+.DS_Store
+
+# Cursor
+.cursorrules
