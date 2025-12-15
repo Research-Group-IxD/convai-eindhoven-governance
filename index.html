@@ -14,497 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900" rel="stylesheet">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
     
-    <style>
-        /* Base Directive Style Reset */
-        :root {
-            --primary-font: 'Source Sans Pro', sans-serif;
-            --accent-color: #D32F2F; /* A bold red/pink accent */
-            --text-color: #222222;
-            --light-bg: #F8F8F8;
-            --padding-large: 6rem 0;
-            --max-width: 800px;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            height: auto;
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        html, body {
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            font-family: var(--primary-font);
-            font-size: 17px;
-            color: var(--text-color);
-            background-color: white;
-            text-align: center;
-            box-sizing: border-box;
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3 {
-            font-family: var(--primary-font);
-            font-weight: 700;
-            color: var(--text-color);
-            line-height: 1.2;
-            margin-bottom: 0.5em;
-        }
-
-        #header h1, #header h2, #header h3, #header .publication-authors {
-            color: white; 
-        }
-
-        h1 { font-size: 3rem; font-weight: 900; }
-        h2 { font-size: 2.5rem; font-weight: 700; border-bottom: 2px solid #ddd; padding-bottom: 0.25em; margin-top: 1.5em; }
-        h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2em; } 
-
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-            border-bottom: 1px dotted var(--accent-color);
-            transition: color 0.2s ease, border-bottom 0.2s ease;
-        }
-        
-        #header a {
-            color: white;
-            border-bottom-color: white;
-        }
-        #header a:hover {
-            color: #ccc;
-            border-bottom-color: #ccc;
-        }
-
-        a:hover {
-            color: #AA0000;
-            border-bottom-color: #AA0000;
-        }
-        
-        /* Layout & Content Containers */
-        .wrapper {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        .section {
-            padding: clamp(3rem, 10vh, 8rem) 0; 
-            box-sizing: border-box; 
-            border-top: 1px solid #EEEEEE;
-            text-align: left;
-            min-height: auto;
-        }
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .content {
-            margin-bottom: 2rem;
-            display: block; 
-        }
-
-        .text-justified {
-            text-align: justify;
-        }
-        
-        #Introduction {
-            padding: 4rem 0; 
-            display: block; 
-            overflow: hidden; 
-        }
-
-        .intro-grid-container {
-            display: flex;
-            height: auto;
-            gap: 2rem;
-        }
-
-        .intro-text-column {
-            width: 60%;
-            padding: 0 2rem;
-            box-sizing: border-box;
-            display: block;
-            text-align: left; 
-            min-height: auto;
-        }
-
-        .intro-image-column {
-            width: 40%;
-            display: flex; 
-            justify-content: center;
-            align-items: flex-start;
-            padding: 0 2rem;
-            box-sizing: border-box;
-            background-color: white; 
-            position: relative;
-            overflow: hidden;
-            max-height: clamp(250px, 50vh, 500px);
-            min-height: 250px;
-            padding-top: 2rem;
-        }
-
-        .intro-image-column img {
-            position: static;
-            display: block;
-            max-width: 100%; 
-            max-height: 100%;
-            width: auto;
-            height: auto;
-            object-fit: contain; 
-            border-radius: 8px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out; 
-        }
-        
-        /*ANIMATION: Target state for fade-in */
-        .intro-image-column img.is-visible {
-            opacity: 1;
-        }
-
-        #Introduction .content {
-            margin-bottom: 0;
-            display: block;
-        }
-
-        #Introduction .text-justified {
-            text-align: justify;
-            flex: auto;
-        }
-        
-        /* Header Specific Styles */
-        #header {
-            height: auto;
-            min-height: 50vh;
-            padding: 0; 
-            position: relative;
-            width: 100%; 
-            
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            background: #000; 
-            overflow: hidden; 
-        }
-        
-        .header-video-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1; 
-        }
-        
-        #header video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); 
-        }
-        
-        .header-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.7) 100%);
-            z-index: 2; 
-        }
-
-        .header-content-wrapper {
-            position: relative; 
-            z-index: 3; 
-            padding: clamp(1rem, 3vh, 2.5rem) 0; 
-            text-align: center;
-        }
-
-        .publication-authors {
-            font-size: 1rem;
-            font-weight: 300;
-            margin: 1rem 0;
-            line-height: 1.5;
-        }
-        
-        #header .publication-authors {
-             color: white;
-        }
-
-        .author-block {
-            display: inline-block;
-            margin: 0 0.5rem;
-        }
-        .eql-cntrb { 
-            display: block;
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            color: #ddd;
-        }
-        
-        /* --- Links Section Style --- */
-        .links-section {
-            height: auto;
-            display: block;
-
-            margin-top: 0;
-
-            padding: 2rem 0 3rem;
-            background: white;
-            border-top: 1px solid #EEEEEE;
-            min-height: 35vh;
-        }
-        
-        .links-group {
-            margin-top: 2rem; 
-            padding-top: 1rem;
-            border-top: 2px dashed #ccc; 
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
-            gap: 1rem;
-        }
-        
-        .links-group-top {
-             border-top: 3px solid var(--accent-color);
-             padding-top: 1.5rem;
-             margin-bottom: 2rem;
-        }
-
-        .links-group-top .action-link {
-            padding: 0.9rem 1.8rem;
-            border-bottom: none;
-            border: 2px solid var(--text-color);
-            border-radius: 28px;
-            background-color: var(--text-color);
-            color: white;
-            font-size: 1.05rem;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.18);
-            transition: all 0.25s ease;
-        }
-
-        .links-group-top .action-link:hover {
-            background-color: var(--accent-color);
-            color: white;
-            border-color: var(--accent-color);
-        }
-
-        .links-group h2 {
-            display: none; 
-        }
-        
-        .links-group-developer {
-            margin-top: 0;
-            padding-top: 0;
-            border-top: none;
-        }
-
-        .link-block {
-            margin: 0.5rem 0.75rem; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            white-space: nowrap;
-        }
-
-        .action-link {
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            padding: 0.5em 0;
-            font-size: 1rem;
-            color: var(--text-color); 
-            border-bottom: 2px solid var(--text-color);
-            display: flex;
-            align-items: center;
-        }
-        
-        .links-group-developer .action-link {
-            font-size: 0.95rem; 
-        }
-
-        .action-link:hover {
-            color: var(--accent-color);
-            border-bottom-color: var(--accent-color);
-        }
-        .action-link .icon {
-            margin-right: 0.5rem;
-            font-size: 1.1em;
-        }
-        .action-link .icon i {
-            font-size: 1.25rem;
-            line-height: 1;
-        }
-        .action-link img {
-            height: 1.25rem;
-            margin-right: 0.5rem;
-        }
-        
-        #teaser {
-            display: none;
-        }
-        
-        #BibTeX pre {
-            background-color: var(--light-bg);
-            border-left: 5px solid var(--accent-color);
-            padding: 1.5rem;
-            overflow-x: auto;
-            overflow-y: hidden;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            margin-top: 1.5rem;
-            box-sizing: border-box;
-            max-width: 100%;
-            width: 100%;
-        }
-
-        #footer {
-            background: var(--text-color);
-            color: #bbb;
-            text-align: center;
-            padding: 3rem 0;
-            font-size: 0.85rem;
-        }
-        #footer a {
-            color: white;
-            border-bottom-color: white;
-        }
-        #footer .wrapper {
-            max-width: var(--max-width);
-        }
-        .footer-links {
-            margin-bottom: 2rem;
-        }
-        .footer-links a {
-            margin: 0 1rem;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        @media screen and (max-width: 900px) {
-            html, body { font-size: 11px; }
-            h1 { font-size: 1.8rem; }
-            h2 { font-size: 1.6rem; }
-            h3 { font-size: 1.2rem; }
-            p { font-size: 0.95rem; line-height: 1.5; }
-            li { font-size: 0.95rem; line-height: 1.5; }
-            .publication-authors { font-size: 0.65rem; }
-
-            /* --- HEADER / LINKS AREA --- */
-            #header { min-height: 40vh; }
-            .links-section { min-height: 25vh; }
-
-            /* --- SECTION PADDING --- */
-            .section { padding: clamp(2rem, 8vh, 5rem) 0; box-sizing: border-box; }
-
-            /* --- INTRO LAYOUT (stacked) --- */
-            .intro-grid-container { flex-direction: column; gap: 1.25rem; }
-
-            .intro-text-column,
-            .intro-image-column {
-                width: 100%;
-                padding: 0;
-                margin-bottom: 1rem;
-                box-sizing: border-box;
-            }
-
-            .intro-image-column {
-                max-height: clamp(160px, 35vh, 320px);
-                min-height: 140px;
-                padding-top: 0.75rem;
-                align-items: flex-start;
-            }
-
-            .links-group-top .action-link {
-                padding: 0.6rem 1rem;
-                border-radius: 22px;
-                font-size: 0.95rem;
-            }
-        }
-
-        @media screen and (min-height: 1200px) {
-            .section {
-                padding: clamp(4rem, 10vh, 8rem) 0;
-            }
-            
-            #header {
-                min-height: 50vh;
-            }
-            
-            .links-section {
-                min-height: 35vh;
-            }
-            
-            .links-group-top .action-link {
-                padding: 0.9rem 1.8rem;
-                font-size: 1.15rem;
-            }
-            
-            h1 { font-size: 4.5rem; }
-            h2 { font-size: 4rem; }
-            h3 { font-size: 2.2rem; }
-            p { font-size: 1.1rem; line-height: 1.7; }
-            li { font-size: 1.1rem; line-height: 1.7; }
-        }
-
-        @media screen and (max-height: 600px) {
-            .section {
-                padding: clamp(1rem, 4vh, 2rem) 0;
-            }
-            
-            #header {
-                min-height: 40vh;
-            }
-            
-            .links-section {
-                min-height: 20vh;
-            }
-            
-            .header-content-wrapper {
-                padding: clamp(0.5rem, 2vh, 1rem) 0;
-            }
-            
-            h1 {
-                font-size: clamp(1.5rem, 5vw, 2.5rem);
-                margin-bottom: 0.25em;
-            }
-            
-            h2 {
-                font-size: clamp(1.25rem, 4vw, 1.75rem);
-                margin-top: 0.75em;
-            }
-            
-            .publication-authors {
-                font-size: clamp(0.75rem, 2.5vw, 0.9rem);
-                margin: 0.5rem 0;
-            }
-            
-            .links-group-top .action-link {
-                padding: 0.45rem 0.9rem;
-                border-radius: 18px;
-                font-size: 0.85rem;
-            }
-            
-            h1 { font-size: 1.3rem; }
-            h2 { font-size: 1.15rem; }
-            h3 { font-size: 1rem; }
-            p { font-size: 0.9rem; line-height: 1.4; }
-            li { font-size: 0.9rem; line-height: 1.4; }
-        }
-    </style>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="static/js/fontawesome.all.min.js"></script>
 </head>
@@ -526,19 +37,19 @@
         
         <div class="publication-authors">
             <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Tim T.J.M. Lemmens</a><sup>*</sup>,
+                Tim T.J.M. Lemmens<sup>*</sup>,
             </span>
             <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yvonne Y.M.C. van Schie</a><sup>*</sup>,
+                Yvonne Y.M.C. van Schie<sup>*</sup>,
             </span>
             <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yannick Y. Maas</a><sup>*</sup>,
+                Yannick Y. Maas<sup>*</sup>,
             </span>
             <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Julian J.P.R. Manders</a><sup>*</sup>,
+                Julian J.P.R. Manders<sup>*</sup>,
             </span>
             <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Olivia O.P. Brabers</a><sup>*</sup>
+                Olivia O.P. Brabers<sup>*</sup>
             </span>
             <div class="eql-cntrb"><small>Fontys University of Applied Sciences, FICT, Research Group IxD | <sup>*</sup>Indicates Equal Contribution</small></div>
         </div>
@@ -550,7 +61,7 @@
     <div class="wrapper">
         <div class="links-group links-group-top">
             <span class="link-block">
-                <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank" class="action-link">
+                <a href="static/pdfs/Frits Philips Poster.pdf" target="_blank" class="action-link">
                     <span class="icon"><i class="fas fa-image"></i></span>
                     <span>Poster</span>
                 </a>
@@ -562,7 +73,7 @@
                 </a>
             </span>
             <span class="link-block">
-                <a href="https://github.com/YOUR REPO HERE" target="_blank" class="action-link">
+                <a href="https://github.com/SuperZeekoe/convai-eindhoven-governance.git" target="_blank" class="action-link">
                     <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span>
                 </a>
@@ -573,15 +84,9 @@
         
         <div class="links-group links-group-developer">
             <span class="link-block">
-                <a href="GIT_WORKFLOW_GUIDE.md" target="_blank" class="action-link">
-                    <span class="icon"><i class="fab fa-git-alt"></i></span>
-                    <span>Git Workflow Guide</span>
-                </a>
-            </span>
-            <span class="link-block">
-                <a href="reflective-city-eindhoven.md" target="_blank" class="action-link">
-                    <span class="icon"><i class="fas fa-city"></i></span>
-                    <span>Reflective City Vision</span>
+                <a href="eindhoven-governance-intro.md" target="_blank" class="action-link">
+                    <span class="icon"><i class="fas fa-users"></i></span>
+                    <span>Societal Impact</span>
                 </a>
             </span>
             <span class="link-block">
@@ -590,10 +95,10 @@
                     <span>Project README</span>
                 </a>
             </span>
-            <span class="link-block">
-                <a href="eindhoven-governance-intro.md" target="_blank" class="action-link">
-                    <span class="icon"><i class="fas fa-users"></i></span>
-                    <span>Societal Impact</span>
+                        <span class="link-block">
+                <a href="GIT_WORKFLOW_GUIDE.md" target="_blank" class="action-link">
+                    <span class="icon"><i class="fas fa-stopwatch"></i></span>
+                    <span>Phases</span>
                 </a>
             </span>
         </div>
@@ -638,10 +143,10 @@
     </div>
 </section>
 
-<section id="Abstract" class="section" style="background: var(--light-bg);">
+<section id="Demo" class="section">
     <div class="wrapper">
         <div class="section-header">
-            <h2>Abstract</h2>
+            <h2>Demo</h2>
         </div>
         <div class="content text-justified">
             <p>
@@ -664,7 +169,7 @@
     </div>
 </section>
 
-<section id="Discussion" class="section" style="background: var(--light-bg);">
+<section id="Discussion" class="section">
     <div class="wrapper">
         <div class="section-header">
             <h2>Discussion</h2>
@@ -691,7 +196,7 @@
 </section>
 
 
-<section id="BibTeX" class="section" style="background: var(--light-bg);">
+<section id="BibTeX" class="section">
     <div class="wrapper">
         <div class="section-header">
             <h2>BibTeX</h2>
@@ -716,7 +221,7 @@ url            = {URL_OF_THIS_WEBSITE}
         <div class="footer-links">
             <a href="#header">Top</a> 
             <a href="#Introduction">Introduction</a> 
-            <a href="#Abstract">Abstract</a> 
+            <a href="#Demo">Demo</a> 
             <a href="#BibTeX">BibTeX</a>
         </div>
         <p>
@@ -725,36 +230,6 @@ url            = {URL_OF_THIS_WEBSITE}
         </p>
     </div>
 </div>
-
-<script>
-$(document).ready(function() {
-    // Function to check if an element is in the viewport
-    function isElementInViewport(el) {
-        var $el = $(el);
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-        var elTop = $el.offset().top;
-        var elBottom = elTop + $el.outerHeight();
-        var buffer = 50; 
-        
-        return elBottom > viewportTop + buffer && elTop < viewportBottom - buffer;
-    }
-
-    // Function to run the fade-in logic
-    function checkFade() {
-        $('.fade-in-target').each(function() {
-            // Check if the element is in the viewport for the fade-in effect
-            if (isElementInViewport(this)) {
-                $(this).addClass('is-visible');
-            }
-        });
-    }
-
-    // Run on load and on scroll
-    checkFade();
-    $(window).on('scroll', checkFade); 
-});
-</script>
-
+    <script src="static/js/index.js"></script>
 </body>
 </html>
