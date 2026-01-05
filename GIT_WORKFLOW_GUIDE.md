@@ -1,245 +1,94 @@
-# Git Workflow Guide for Students
+# Detailed Project Overview  
+## The Development of Frits Philips AI
 
-This guide explains how to work with Git and GitHub for this research project. It's designed to help students understand and follow best practices for collaborative development.
+### Phase 1: Concept Development and Initial Brainstorming (September 2025)
+The project started with the ambition to represent the city of Eindhoven in an interactive way using artificial intelligence. During the first phase, team members each selected an object to experiment with and train. Concepts included a chatbot for a statue, a talking tree and mood detection.
 
-## 🌳 Branch Structure
+**Selection of Frits**  
+After consultation with stakeholders, the statue of Frits Philips on the Market Square in Eindhoven was chosen as the central concept.
 
-Our repository uses a **protected branch workflow** with the following structure:
+**Initial test**  
+Feasibility was tested by training a ChatGPT model with instructions defining its role as a digital extension of the physical statue. The goal was to explore whether the AI could function as a stepping stone toward a broader interactive city experience.
 
-```
-main (protected)
-├── development (main development branch)
-    ├── feature/student-name-feature-description
-    ├── feature/another-feature
-    └── bugfix/fix-description
-```
+### Phase 2: Character Development and Initial Instructions
+This phase focused on building the foundation of Frits’ unique personality.
 
-### Branch Descriptions
+**Focus on behavior**  
+All distracting AI features such as internet browsing, canvas tools and image generation were disabled. This was essential to keep the focus fully on language, history and character behavior.
 
-- **`main`**: Production-ready code. **Protected** - no direct pushes allowed
-- **`development`**: Integration branch for ongoing development work
-- **`feature/*`**: Individual feature branches created from `development`
-- **`bugfix/*`**: Bug fix branches created from `development`
+**Instructions**  
+Frits was instructed to talk about his own history and the history of Philips, with a specific focus on his importance to the city of Eindhoven. A Wikipedia page was used as the first factual knowledge source.
 
-## 🚀 Getting Started
+### Phase 3: Refinement of Personality and Knowledge Base
+Early results showed that the AI still communicated too much in a generic GPT style and often provided unnecessary information.
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Research-Group-IxD/convai-eindhoven-governance.git
-cd convai-eindhoven-governance
-```
+**Personal data**  
+To improve this, more in-depth information was added through a PDF containing details about his career, interests and personal background.
 
-### 2. Set Up Your Development Environment
-```bash
-# Switch to development branch
-git checkout development
+**Refinement**  
+The instructions were tightened. Frits introduces himself briefly, speaks only about his professional life and refrains from political or ethical opinions.
 
-# Make sure you have the latest changes
-git pull origin development
-```
+**Context awareness**  
+Through these adjustments, the AI also learned to recognize its physical surroundings on the Market Square, making interactions more relevant for passersby.
 
-## 📝 Development Workflow
+### Phase 4: Realism, Writing Style and Humanity
+To move from a chatbot to a living statue, a warmer, more modest and down-to-earth tone was required.
 
-### Step 1: Create a Feature Branch
-Always create a new branch for your work. Use descriptive names:
+**Interview transcripts**  
+By adding real interview transcripts, the AI learned to better mirror the word choice and sentence structure of Frits Philips.
 
-```bash
-# Create and switch to a new feature branch
-git checkout -b feature/your-name-descriptive-feature-name
+**Experience over facts**  
+The focus shifted to experience. Instead of citing numbers and facts, Frits responds to what he perceives on the Market Square, such as the weather or atmosphere.
 
-# Examples:
-git checkout -b feature/sarah-add-video-carousel
-git checkout -b feature/mike-update-citation-format
-git checkout -b bugfix/lisa-fix-mobile-layout
-```
+**Human traits**  
+Uncertainty was intentionally built in. When Frits is not sure about something, he openly admits it. This makes the character more believable and human.
 
-### Step 2: Make Your Changes
-Work on your feature, making regular commits with clear messages:
+### Phase 5: Security and Jailbreak Prevention
+Protecting the integrity of the character was a key concern. Users might attempt to push the AI out of character using reset or jailbreak prompts.
 
-```bash
-# Stage your changes
-git add .
+**Security layer**  
+A dedicated detection layer was added to identify and block such attempts.
 
-# Commit with a descriptive message
-git commit -m "Add responsive video carousel component
+**In-character response**  
+Instead of showing an error message, Frits responds in character:  
+"Sorry, that is something you should say to a computer. My name is Frits Philips."  
+This keeps the AI stable and credible, even when provoked.
 
-- Implemented mobile-friendly video player
-- Added touch gesture support
-- Updated CSS for better mobile experience"
-```
+### Phase 6: Transition to Local Development (Python and API)
+After the success of the simulations, the project moved toward a full technical implementation.
 
-### Step 3: Push Your Branch
-```bash
-# Push your feature branch to GitHub
-git push origin feature/your-name-descriptive-feature-name
-```
+**Own infrastructure**  
+A backend and frontend were developed in Python, using the portkey-ai library to create a stable connection with the Fontys AI Gateway.
 
-### Step 4: Create a Pull Request
-1. Go to the GitHub repository
-2. Click "Compare & pull request" (GitHub will show this after you push)
-3. Set the base branch to `development` (not `main`)
-4. Fill out the pull request template:
-   - **Title**: Brief description of your changes
-   - **Description**: What you changed and why
-   - **Testing**: How you tested your changes
+**Autonomy**  
+The mistral-medium-2505 model was configured to allow Frits to respond independently, enabling future integration into physical installations.
 
-### Step 5: Code Review & Merge
-- Wait for review from project maintainers
-- Address any feedback by making additional commits
-- Once approved, your changes will be merged into `development`
+### Phase 7: Dynamic Configuration and Advanced Knowledge Base
+To maintain flexibility, personality traits and behavioral rules were separated from the code and stored in a `frits_config.json` file.
 
-## 🔄 Keeping Your Branch Updated
+**Advanced parsing**  
+With the help of Gemini, a system was built to extract text from HTML and PDF files, such as historical Philips brochures. Noise is filtered using libraries like beautifulsoup4 and pypdf.
 
-While working on long-running features, regularly sync with the development branch:
+**Result**  
+As a result, Frits no longer speaks like a programmed object, but like a person with rich and coherent knowledge of his own past.
 
-```bash
-# Switch to development branch
-git checkout development
+### Phase 8: Visual Interface and Voice Interaction
+The transition to a user-friendly public interface was achieved using Streamlit.
 
-# Pull latest changes
-git pull origin development
+**Web app**  
+The `frits_app.py` file creates a browser-based chat interface that can be used directly for testing and demonstrations.
 
-# Switch back to your feature branch
-git checkout feature/your-feature-name
+**Voice interaction**  
+Speech recognition was added using SpeechRecognition and streamlit-mic-recorder. Users can now speak to the statue instead of only typing.
 
-# Merge development into your branch
-git merge development
-```
+### Phase 9: Optimization for Outdoor Use
+The final phase focused on using the system in the busy environment of the Market Square in Eindhoven.
 
-## 📚 Common Git Commands Cheat Sheet
+**Smart audio**  
+A calibration function was added using PyAudio to measure ambient noise. This ensures that Frits responds only to human voices and filters out city noise.
 
-### Checking Status
-```bash
-git status                    # See current status
-git branch                    # List local branches
-git branch -r                 # List remote branches
-git log --oneline            # See commit history
-```
+**Natural flow**  
+A hands-free loop automatically reactivates the microphone once Frits has finished speaking. This creates a smooth, natural dialogue without buttons or manual interaction.
 
-### Working with Changes
-```bash
-git add filename             # Stage specific file
-git add .                    # Stage all changes
-git commit -m "message"      # Commit with message
-git push origin branch-name  # Push to remote branch
-```
-
-### Branch Management
-```bash
-git checkout branch-name     # Switch to existing branch
-git checkout -b new-branch   # Create and switch to new branch
-git branch -d branch-name    # Delete local branch (after merge)
-git push origin --delete branch-name  # Delete remote branch
-```
-
-## ⚠️ Important Rules
-
-### 🚫 DON'T:
-- **Never push directly to `main`** - it's protected and will be rejected
-- Don't work directly on the `development` branch for your features
-- Don't force push (`git push --force`) to shared branches
-- Don't commit large binary files without checking with maintainers
-
-### ✅ DO:
-- Always create feature branches from `development`
-- Write clear, descriptive commit messages
-- Test your changes before creating a pull request
-- Ask for help if you're unsure about something
-
-## 🆘 Troubleshooting Common Issues
-
-### "Your branch is behind origin/development"
-```bash
-git checkout development
-git pull origin development
-git checkout your-feature-branch
-git merge development
-```
-
-### "Merge conflict"
-1. Open the conflicted files
-2. Look for conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`)
-3. Resolve conflicts by choosing the correct code
-4. Remove conflict markers
-5. Stage and commit the resolved files:
-```bash
-git add .
-git commit -m "Resolve merge conflict"
-```
-
-### "I committed to the wrong branch"
-If you committed to `development` instead of a feature branch:
-```bash
-# Create a new branch from current state
-git checkout -b feature/your-feature-name
-
-# Go back to development
-git checkout development
-
-# Reset development to match remote
-git reset --hard origin/development
-```
-
-### "I need to undo my last commit"
-```bash
-# Undo last commit but keep changes
-git reset --soft HEAD~1
-
-# Undo last commit and discard changes (be careful!)
-git reset --hard HEAD~1
-```
-
-## 🎯 Best Practices for Students
-
-### Commit Messages
-Use the format: `Type: Brief description`
-
-**Types:**
-- `feat:` New feature
-- `fix:` Bug fix
-- `docs:` Documentation changes
-- `style:` Formatting, missing semi colons, etc.
-- `refactor:` Code restructuring
-- `test:` Adding tests
-
-**Examples:**
-```bash
-git commit -m "feat: Add mobile navigation menu"
-git commit -m "fix: Resolve carousel autoplay issue on iOS"
-git commit -m "docs: Update installation instructions"
-```
-
-### Pull Request Descriptions
-Always include:
-- **What** you changed
-- **Why** you made the change
-- **How** to test the changes
-- Screenshots (for UI changes)
-
-### Code Review
-When reviewing others' code:
-- Be constructive and helpful
-- Explain why you suggest changes
-- Ask questions if something is unclear
-- Approve when you're satisfied with the changes
-
-## 🔗 Useful Resources
-
-- [GitHub Flow Guide](https://guides.github.com/introduction/flow/)
-- [Git Handbook](https://guides.github.com/introduction/git-handbook/)
-- [Interactive Git Tutorial](https://learngitbranching.js.org/)
-- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-
-## 💬 Getting Help
-
-If you're stuck:
-1. Check this guide first
-2. Search for your error message online
-3. Ask a teammate or project maintainer
-4. Create an issue in the repository with the `help wanted` label
-
-Remember: Everyone makes mistakes with Git. The important thing is to learn from them and ask for help when needed!
-
----
-
-*This guide is part of the Research Group IxD project template. For questions about this workflow, contact the project maintainers.*
+**Ethical completion**  
+The entire development process was evaluated against ethical, legal and societal values to ensure a responsible and careful implementation.
