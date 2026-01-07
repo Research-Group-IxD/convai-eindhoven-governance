@@ -1,211 +1,307 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    
-    <meta name="description" content="An interactive AI agent project featuring a virtual Frits Philips for cultural heritage and urban technology in Eindhoven.">
-    <meta property="og:title" content="IxD Research Project Eindhoven AI: Virtual Frits Philips Agent"/>
-    <meta property="og:url" content="URL_OF_THE_WEBSITE"/>
-    <meta name="keywords" content="IxD, AI, Eindhoven, Frits Philips, Cultural Heritage">
+  <head>
+    <meta charset="utf-8" />
 
-    <title>Talk To Frits: Discover Eindhoven's heritage through conversation.</title>
+    <meta
+      name="description"
+      content="An interactive AI agent project featuring a virtual Frits Philips for cultural heritage and urban technology in Eindhoven."
+    />
+    <meta
+      property="og:title"
+      content="IxD Research Project Eindhoven AI: Virtual Frits Philips Agent"
+    />
+    <meta property="og:url" content="URL_OF_THE_WEBSITE" />
+    <meta
+      name="keywords"
+      content="IxD, AI, Eindhoven, Frits Philips, Cultural Heritage"
+    />
 
-    <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="static/css/index.css">
-    
+    <title>
+      Talk To Frits: Discover Eindhoven's heritage through conversation.
+    </title>
+
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="static/css/index.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="static/js/fontawesome.all.min.js"></script>
-</head>
-<body>
-
-<div id="header">
-    
-    <div class="header-video-container">
+  </head>
+  <body>
+    <div id="header">
+      <div class="header-video-container">
         <video poster="" id="tree" autoplay muted loop>
-            <source src="static/videos/banner_video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+          <source src="static/videos/banner_video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
-    </div>
-    
-    <div class="header-overlay"></div>
-    
-    <div class="wrapper header-content-wrapper">
-        <h1 class="publication-title">Talk To Frits: Discover Eindhoven's heritage through conversation.</h1>
-        
+      </div>
+
+      <div class="header-overlay"></div>
+
+      <div class="wrapper header-content-wrapper">
+        <h1 class="publication-title">
+          Talk To Frits: Discover Eindhoven's heritage through conversation.
+        </h1>
+
         <div class="publication-authors">
-            <span class="author-block">
-                Tim T.J.M. Lemmens<sup>*</sup>,
-            </span>
-            <span class="author-block">
-                Yvonne Y.M.C. van Schie<sup>*</sup>,
-            </span>
-            <span class="author-block">
-                Yannick Y. Maas<sup>*</sup>,
-            </span>
-            <span class="author-block">
-                Julian J.P.R. Manders<sup>*</sup>,
-            </span>
-            <span class="author-block">
-                Olivia O.P. Brabers<sup>*</sup>
-            </span>
-            <div class="eql-cntrb"><small>Fontys University of Applied Sciences, FICT, Research Group IxD | <sup>*</sup>Indicates Equal Contribution</small></div>
+          <span class="author-block"> Tim T.J.M. Lemmens<sup>*</sup>, </span>
+          <span class="author-block">
+            Yvonne Y.M.C. van Schie<sup>*</sup>,
+          </span>
+          <span class="author-block"> Yannick Y. Maas<sup>*</sup>, </span>
+          <span class="author-block"> Julian J.P.R. Manders<sup>*</sup>, </span>
+          <span class="author-block"> Olivia O.P. Brabers<sup>*</sup> </span>
+          <div class="eql-cntrb">
+            <small
+              >Fontys University of Applied Sciences, FICT, Research Group IxD |
+              <sup>*</sup>Indicates Equal Contribution</small
+            >
+          </div>
         </div>
-        
+      </div>
     </div>
-</div>
 
-<div class="links-section">
-    <div class="wrapper">
+    <div class="links-section">
+      <div class="wrapper">
         <div class="links-group links-group-top">
-            <span class="link-block">
-                <a href="static/pdfs/Frits Philips Poster.pdf" target="_blank" class="action-link">
-                    <span class="icon"><i class="fas fa-image"></i></span>
-                    <span>Poster</span>
-                </a>
-            </span>
-            <span class="link-block">
-                <a href="static/pdfs/supplementary_material.pdf" target="_blank" class="action-link">
-                    <span class="icon"><i class="fas fa-file-alt"></i></span>
-                    <span>Documentation</span>
-                </a>
-            </span>
-            <span class="link-block">
-                <a href="https://github.com/SuperZeekoe/convai-eindhoven-governance.git" target="_blank" class="action-link">
-                    <span class="icon"><i class="fab fa-github"></i></span>
-                    <span>Code</span>
-                </a>
-            </span>
+          <span class="link-block">
+            <a
+              href="static/pdfs/Frits Philips Poster.pdf"
+              target="_blank"
+              class="action-link"
+            >
+              <span class="icon"><i class="fas fa-image"></i></span>
+              <span>Poster</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a
+              href="static/pdfs/supplementary_material.pdf"
+              target="_blank"
+              class="action-link"
+            >
+              <span class="icon"><i class="fas fa-file-alt"></i></span>
+              <span>Documentation</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a
+              href="https://github.com/SuperZeekoe/convai-eindhoven-governance.git"
+              target="_blank"
+              class="action-link"
+            >
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>Code</span>
+            </a>
+          </span>
         </div>
 
-        <h2 style="margin-top: 3rem; margin-bottom: 2rem; font-weight: 700; border-bottom: none;">Developer & Context Resources</h2>
-        
+        <h2
+          style="
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            border-bottom: none;
+          "
+        >
+          Developer & Context Resources
+        </h2>
+
         <div class="links-group links-group-developer">
-            <span class="link-block">
-                <a href="eindhoven-governance-intro.md" target="_blank" class="action-link">
-                    <span class="icon"><i class="fas fa-users"></i></span>
-                    <span>Societal Impact</span>
-                </a>
-            </span>
-            <span class="link-block">
-                <a href="README.md" target="_blank" class="action-link">
-                    <span class="icon"><i class="fas fa-book-open"></i></span>
-                    <span>Project README</span>
-                </a>
-            </span>
-                        <span class="link-block">
-                <a href="static/pdfs/phases.pdf" target="_blank" class="action-link">
-                    <span class="icon"><i class="fas fa-stopwatch"></i></span>
-                    <span>Phases</span>
-                </a>
-            </span>
+          <span class="link-block">
+            <a
+              href="eindhoven-governance-intro.md"
+              target="_blank"
+              class="action-link"
+            >
+              <span class="icon"><i class="fas fa-users"></i></span>
+              <span>Societal Impact</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="README.md" target="_blank" class="action-link">
+              <span class="icon"><i class="fas fa-book-open"></i></span>
+              <span>Project README</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a
+              href="static/pdfs/phases.pdf"
+              target="_blank"
+              class="action-link"
+            >
+              <span class="icon"><i class="fas fa-stopwatch"></i></span>
+              <span>Phases</span>
+            </a>
+          </span>
         </div>
+      </div>
     </div>
-</div>
 
-<div id="teaser">
-    <div class="wrapper">
-        </div>
-</div>
+    <div id="teaser">
+      <div class="wrapper"></div>
+    </div>
 
-<section id="Introduction" class="section">
-    <div class="intro-grid-container">
+    <section id="Introduction" class="section">
+      <div class="intro-grid-container">
         <div class="intro-text-column">
-            <div class="wrapper" style="max-width: 100%;">
-                <div class="section-header" style="text-align: left;">
-                    <h2>Introduction</h2>
-                </div>
-                <div class="content">
-                    <div class="text-justified">
-                        <p>
-                            Our group project from Eindhoven AI focuses entirely on developing and exploring possibilities around bringing objects in Eindhoven to life. For this, we have chosen to create a virtual version of <strong>Frits Philips</strong>. We want to use an AI agent that has his voice, character, and knowledge, and can talk with people about Eindhoven, the city's history, and culture.
-                        </p>
-                        <p>
-                            The project mainly falls within the domains of cultural heritage, urban technology, and interactive AI. By exploring whether we can attach a digital personality to a well-known figure from the city, we examine whether AI can contribute to the cultural preservation of the city.
-                        </p>
-                        <p>
-                            Our future users and therefore target audience (and stakeholders) are as follows:
-                            <ul>
-                                <li><strong>Residents of Eindhoven:</strong> Residents who want to learn more about their own city and history.</li>
-                                <li><strong>Tourists/(museum) visitors of Eindhoven:</strong> People who can visit an interactive installation to get to know the city.</li>
-                            </ul> 
-                        </p>
-                    </div>
-                </div>
+          <div class="wrapper" style="max-width: 100%">
+            <div class="section-header" style="text-align: left">
+              <h2>Introduction</h2>
             </div>
+            <div class="content">
+              <div class="text-justified">
+                <p>
+                  Our group project from Eindhoven AI focuses entirely on
+                  developing and exploring possibilities around bringing objects
+                  in Eindhoven to life. For this, we have chosen to create a
+                  virtual version of <strong>Frits Philips</strong>. We want to
+                  use an AI agent that has his voice, character, and knowledge,
+                  and can talk with people about Eindhoven, the city's history,
+                  and culture.
+                </p>
+                <p>
+                  The project mainly falls within the domains of cultural
+                  heritage, urban technology, and interactive AI. By exploring
+                  whether we can attach a digital personality to a well-known
+                  figure from the city, we examine whether AI can contribute to
+                  the cultural preservation of the city.
+                </p>
+                <p>
+                  Our future users and therefore target audience (and
+                  stakeholders) are as follows:
+                </p>
+
+                <ul>
+                  <li>
+                    <strong>Residents of Eindhoven:</strong> Residents who want
+                    to learn more about their own city and history.
+                  </li>
+                  <li>
+                    <strong>Tourists/(museum) visitors of Eindhoven:</strong>
+                    People who can visit an interactive installation to get to
+                    know the city.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        
+
         <div class="intro-image-column">
-            <img src="static/images/introduction_img.jpg" alt="A conceptual image of the Frits Philips AI agent interface displayed on a tablet in a public square in Eindhoven." class="fade-in-target"/>
+          <img
+            src="static/images/introduction_img.jpg"
+            alt="A conceptual image of the Frits Philips AI agent interface displayed on a tablet in a public square in Eindhoven."
+            class="fade-in-target"
+          />
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="Demo" class="section">
-    <div class="wrapper">
+    <section id="Demo" class="section">
+      <div class="wrapper">
         <div class="section-header">
-            <h2>Demo</h2>
+          <h2>Demo</h2>
         </div>
         <div class="content text-justified">
-            <p>
-                This is where your project's abstract goes. Be concise and impactful. Highlight the key contributions and findings of your work. The abstract should provide a standalone summary of your research, including the problem, methods, results, and conclusions.
-            </p>
+          <p>
+            This is where your project's abstract goes. Be concise and
+            impactful. Highlight the key contributions and findings of your
+            work. The abstract should provide a standalone summary of your
+            research, including the problem, methods, results, and conclusions.
+          </p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="Results" class="section">
-    <div class="wrapper">
+    <section id="Results" class="section">
+      <div class="wrapper">
         <div class="section-header">
-            <h2>Results</h2>
+          <h2>Results</h2>
+        </div>
+        <!-- Results -->
+        <div class="content text-justified">
+          <p>
+            The results of our research show that the concept of an AI-driven
+            version of Frits Philips is both relevant and feasible. The
+            literature study provided a clear understanding of Frits Philips’
+            personality and values, which successfully translated into a
+            recognizable and human-like AI character. The competitive analysis
+            revealed that many existing interactive installations lack real
+            conversational depth, confirming that our concept fills a clear gap
+            within this domain.
+          </p>
+
+          <p>
+            User testing at the AI &amp; Data Event and the survey results
+            showed that users experience the interaction with AI-Frits as
+            realistic, pleasant, and engaging. Participants did not perceive
+            Frits as a standard chatbot, but as a believable character with a
+            strong connection to Eindhoven. At the same time, the results
+            highlighted areas for improvement, such as adding more personal
+            stories, refining language use, and shortening responses.
+          </p>
+
+          <p>
+            Overall, the findings confirm that the project has a strong
+            foundation and clear potential. The results support our design
+            choices and provide concrete direction for further development
+            toward a complete and meaningful proof of concept.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Conclusion" class="section">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>Conclusion</h2>
+        </div>
+        <!-- Conclusion -->
+        <div class="content text-justified">
+          <p>
+            This research shows that bringing a historical figure like Frits
+            Philips to life through AI is both meaningful and promising within
+            the context of cultural heritage and urban technology. By combining
+            literature study, competitive analysis, and user testing, we
+            demonstrated that an AI-driven character can be perceived as human,
+            engaging, and relevant to the city of Eindhoven.
+          </p>
+
+          <p>
+            The project’s main contribution lies in exploring how conversational
+            AI can move beyond scripted interactions and support cultural
+            preservation in a modern, interactive way. While further work is
+            needed to deepen the character, refine responses, and address
+            ethical considerations, the research confirms that this concept has
+            clear value and strong potential for future development and
+            real-world application.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="BibTeX" class="section">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>BibTeX</h2>
         </div>
         <div class="content text-justified">
-            <p>
-                This section should present the results of your research. Use a combination of text, images, and videos to showcase your findings in a clear and compelling way. Make sure to provide context for your results and explain what they mean in relation to your research questions.
-            </p>
-            </div>
-    </div>
-</section>
-
-<section id="Discussion" class="section">
-    <div class="wrapper">
-        <div class="section-header">
-            <h2>Discussion</h2>
-        </div>
-        <div class="content text-justified">
-            <p>
-                In the discussion section, you should interpret your results and explain their implications. What do your findings mean for your field of research? What are the limitations of your study? What are some potential directions for future research? This is your opportunity to engage in a critical reflection on your work and its contribution to the broader academic conversation.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="Conclusion" class="section">
-    <div class="wrapper">
-        <div class="section-header">
-            <h2>Conclusion</h2>
-        </div>
-        <div class="content text-justified">
-            <p>
-                The conclusion should provide a concise summary of your research and its main findings. Reiterate the key contributions of your work and its significance for your field. You can also use this section to offer some final thoughts on your research and its potential impact.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-<section id="BibTeX" class="section">
-    <div class="wrapper">
-        <div class="section-header">
-            <h2>BibTeX</h2>
-        </div>
-        <div class="content text-justified">
-            <p>
-                If you find our work helpful, please consider citing it. For your convenience, we've provided a BibTeX entry for this project template below.
-            </p>
-            <pre><code>@misc{deGraaf2025IxDTemplate,
+          <p>
+            If you find our work helpful, please consider citing it. For your
+            convenience, we've provided a BibTeX entry for this project template
+            below.
+          </p>
+          <pre><code>@misc{deGraaf2025IxDTemplate,
 author         = {de Graaf, Mark and van Bokhorst, Lonn and Lamers, Linda},
 title          = {IxD Research Project Template},
 howpublished   = {Fontys University of Applied Sciences, Research Group IxD},
@@ -213,23 +309,30 @@ year           = {2025},
 url            = {URL_OF_THIS_WEBSITE}
 }</code></pre>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<div id="footer">
-    <div class="wrapper">
+    <div id="footer">
+      <div class="wrapper">
         <div class="footer-links">
-            <a href="#header">Top</a> 
-            <a href="#Introduction">Introduction</a> 
-            <a href="#Demo">Demo</a> 
-            <a href="#BibTeX">BibTeX</a>
+          <a href="#header">Top</a>
+          <a href="#Introduction">Introduction</a>
+          <a href="#Demo">Demo</a>
+          <a href="#BibTeX">BibTeX</a>
         </div>
         <p>
-            Design based on the <a href="https://html5up.net/directive" target="_blank">Directive</a> template by HTML5 UP.<br>
-            Content structure adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          Design based on the
+          <a href="https://html5up.net/directive" target="_blank">Directive</a>
+          template by HTML5 UP.<br />
+          Content structure adapted from the
+          <a
+            href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+            target="_blank"
+            >Academic Project Page Template</a
+          >.
         </p>
+      </div>
     </div>
-</div>
     <script src="static/js/index.js"></script>
-</body>
+  </body>
 </html>
