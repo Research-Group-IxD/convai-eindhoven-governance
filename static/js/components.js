@@ -1,4 +1,6 @@
 // Load reusable header and footer components
+let headerLoaded = false;
+let footerLoaded = false;
 async function loadHeader() {
   try {
     const response = await fetch('static/elements/header.html');
@@ -6,6 +8,11 @@ async function loadHeader() {
     const headerPlaceholder = document.getElementById('header-placeholder');
     if (headerPlaceholder) {
       headerPlaceholder.innerHTML = html;
+      headerLoaded = true;
+      document.dispatchEvent(new Event('components:header-loaded'));
+      if (headerLoaded && footerLoaded) {
+        document.dispatchEvent(new Event('components:ready'));
+      }
     }
   } catch (error) {
     console.error('Error loading header:', error);
@@ -19,6 +26,11 @@ async function loadFooter() {
     const footerPlaceholder = document.getElementById('footer-placeholder');
     if (footerPlaceholder) {
       footerPlaceholder.innerHTML = html;
+      footerLoaded = true;
+      document.dispatchEvent(new Event('components:footer-loaded'));
+      if (headerLoaded && footerLoaded) {
+        document.dispatchEvent(new Event('components:ready'));
+      }
     }
   } catch (error) {
     console.error('Error loading footer:', error);

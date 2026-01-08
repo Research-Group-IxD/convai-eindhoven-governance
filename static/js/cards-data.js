@@ -1,4 +1,5 @@
-// Card data for all phases
+
+// Card data for all phases (poster-aligned)
 const phaseCards = {
 	ideation: [
 		{
@@ -12,29 +13,7 @@ const phaseCards = {
 			href: '#'
 		}
 	],
-	research: [
-		{
-			title: 'Societal Impact Document',
-			description: 'Analysis of ethical considerations and societal implications of AI heritage agents.',
-			href: 'static/pdfs/Societal Impact Document-1.pdf'
-		},
-		{
-			title: 'Competitive Analysis',
-			description: 'Examination of comparable interactive installations and their strengths/gaps.',
-			href: '#'
-		},
-		{
-			title: 'Literature Study',
-			description: 'Background research on Frits Philips, AI in cultural heritage, and conversational design.',
-			href: '#'
-		},
-		{
-			title: 'Target Audience & Personas',
-			description: 'User profiles and needs analysis for residents and tourists engaging with the installation.',
-			href: '#'
-		}
-	],
-	concepting: [
+	'proof-of-concepting': [
 		{
 			title: 'Mood of the Day',
 			description: 'Interactive installation reflecting the city\'s current emotional state through AI.',
@@ -61,7 +40,41 @@ const phaseCards = {
 			href: '#'
 		}
 	],
-	validation: [
+	'working-concept': [
+		{
+			title: 'Experience Flow',
+			description: 'Core interaction flow and integrated concept behaviors.',
+			href: '#'
+		},
+		{
+			title: 'Prototype Demo',
+			description: 'Demonstration of the working concept with key interactions.',
+			href: '#'
+		}
+	],
+	'additional-researching': [
+		{
+			title: 'Societal Impact Document',
+			description: 'Analysis of ethical considerations and societal implications of AI heritage agents.',
+			href: 'static/pdfs/Societal Impact Document-1.pdf'
+		},
+		{
+			title: 'Competitive Analysis',
+			description: 'Examination of comparable interactive installations and their strengths/gaps.',
+			href: '#'
+		},
+		{
+			title: 'Literature Study',
+			description: 'Background research on Frits Philips, AI in cultural heritage, and conversational design.',
+			href: '#'
+		},
+		{
+			title: 'Target Audience & Personas',
+			description: 'User profiles and needs analysis for residents and tourists engaging with the installation.',
+			href: '#'
+		}
+	],
+	'refinement-testing': [
 		{
 			title: 'User Test Report',
 			description: 'Qualitative findings from live testing sessions with public participants.',
@@ -98,9 +111,9 @@ const phaseCards = {
 			href: '#'
 		}
 	],
-	planning: [
+	'finalizing-project': [
 		{
-			title: 'Planning',
+			title: 'Final Planning',
 			description: 'Master schedule with task assignments and milestone dates.',
 			href: '#'
 		},
@@ -148,8 +161,16 @@ function renderPhaseCards(phaseId) {
 }
 
 // Initialize cards when page loads
+
 document.addEventListener('DOMContentLoaded', function() {
-	const phases = ['ideation', 'research', 'concepting', 'validation', 'planning'];
+	const phases = [
+		'ideation',
+		'proof-of-concepting',
+		'working-concept',
+		'additional-researching',
+		'refinement-testing',
+		'finalizing-project'
+	];
 	phases.forEach(phase => {
 		const container = document.querySelector(`#${phase} .link-cards`);
 		if (container) {

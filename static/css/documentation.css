@@ -24,7 +24,6 @@
 				backdrop-filter: blur(8px);
 				color: #fff;
 				text-decoration: none;
-				font-weight: 600;
 				transition: background 150ms ease, transform 150ms ease;
 			}
 
@@ -48,7 +47,6 @@
 
 			.doc-hero h1 {
 				font-size: 3rem;
-				font-weight: 900;
 				margin: 0 0 0.5rem;
 				color: #1a1a1a;
 			}
@@ -158,10 +156,13 @@
 			/* Phase Sections */
 			.phase-section {
 				background: #fff;
-			padding: 2rem 0rem 4rem 0rem; 
+				padding: 2rem 0 4rem 0;
+				border-bottom: 2px solid #f0f0f0;
+			}
+
 			.phase-section:last-of-type {
 				border-bottom: none;
-			}}
+			}
 
 			.phase-header {
 				text-align: center;

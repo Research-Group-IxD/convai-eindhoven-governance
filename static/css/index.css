@@ -1,6 +1,44 @@
+        /* Aileron Font Family */
+        @font-face {
+            font-family: 'Aileron';
+            src: url('../font/Aileron-UltraLight.otf') format('opentype');
+            font-weight: 200;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Aileron';
+            src: url('../font/Aileron-Light.otf') format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Aileron';
+            src: url('../font/Aileron-Regular.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Aileron';
+            src: url('../font/Aileron-SemiBold.otf') format('opentype');
+            font-weight: 600;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Aileron';
+            src: url('../font/Aileron-Bold.otf') format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Aileron';
+            src: url('../font/Aileron-Heavy.otf') format('opentype');
+            font-weight: 800;
+            font-style: normal;
+        }
+
         /* Base Directive Style Reset */
         :root {
-            --primary-font: 'Source Sans Pro', sans-serif;
+            --primary-font: 'Aileron', sans-serif;
             --accent-color: #D32F2F; /* A bold red/pink accent */
             --text-color: #222222;
             --light-bg: #F8F8F8;
