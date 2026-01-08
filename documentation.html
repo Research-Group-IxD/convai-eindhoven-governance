@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="description"
+			content="All semester documentation for the Eindhoven AI project (Talk to Frits)."
+		/>
+		<meta property="og:title" content="Project Documentation — Eindhoven AI" />
+		<meta property="og:url" content="URL_OF_THE_WEBSITE/documentation.html" />
+		<meta
+			name="keywords"
+			content="IxD, AI, Eindhoven, Frits Philips, Project Documentation"
+		/>
+		<title>Project Documentation — Eindhoven AI</title>
+		<link rel="icon" type="image/x-icon" href="static/images/favicon.png" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+		/>
+		<link rel="stylesheet" href="static/css/index.css" />
+		<link rel="stylesheet" href="static/css/documentation.css" />
+	</head>
+	<body>
+		<a class="back-home-btn" href="index.html">
+			<span class="icon">←</span>
+			<span>Back to Home</span>
+		</a>
+
+		<div id="header-placeholder"></div>
+
+		<!-- Hero Section -->
+		<section class="doc-hero">
+			<div class="wrapper">
+				<h1>Project Documentation</h1>
+				<h2>Talk to Frits — Semester Overview</h2>
+				<p>
+					This page provides access to all project documentation organized by phase.<br>
+					Explore our research, concepts, validation work, and planning artifacts from the semester.
+                    <strong> (Click the timeline to jump to a section.) </strong>
+				</p>
+			</div>
+		</section>
+
+		<!-- Timeline -->
+		<section class="timeline-container">
+			<div class="wrapper">
+				<nav class="timeline">
+					<a href="#ideation" class="timeline-item">
+						<div class="timeline-dot"></div>
+						<span class="timeline-label">Ideation</span>
+					</a>
+					<a href="#research" class="timeline-item">
+						<div class="timeline-dot"></div>
+						<span class="timeline-label">Research</span>
+					</a>
+					<a href="#concepting" class="timeline-item">
+						<div class="timeline-dot"></div>
+						<span class="timeline-label">Concepting</span>
+					</a>
+					<a href="#validation" class="timeline-item">
+						<div class="timeline-dot"></div>
+						<span class="timeline-label">Validation</span>
+					</a>
+					<a href="#planning" class="timeline-item">
+						<div class="timeline-dot"></div>
+						<span class="timeline-label">Planning</span>
+					</a>
+				</nav>
+			</div>
+		</section>
+
+		<div class="timeline-spacer"></div>
+
+		<!-- Ideation Phase -->
+		<section id="ideation" class="phase-section">
+			<div class="wrapper">
+				<div class="phase-header">
+					<h2>Ideation</h2>
+					<h3>Brainstorming & Early Concepts</h3>
+				</div>
+				<p class="phase-description">
+					In the ideation phase, we explored diverse concepts for bringing Eindhoven's heritage to life through AI.
+					We facilitated collaborative brainstorming sessions, mapped ideas visually, and prioritized features using the MoSCoW method.
+				</p>
+				<div class="link-cards"></div>
+			</div>
+		</section>
+
+		<!-- Research Phase -->
+		<section id="research" class="phase-section">
+			<div class="wrapper">
+				<div class="phase-header">
+					<h2>Research</h2>
+					<h3>Context, Users & Background</h3>
+				</div>
+				<p class="phase-description">
+					Our research phase focused on understanding Frits Philips' historical context, analyzing existing cultural heritage installations,
+					and defining our target audience. We conducted literature studies, competitive analysis, and stakeholder mapping to ground our concept.
+				</p>
+				<div class="link-cards"></div>
+			</div>
+		</section>
+
+		<!-- Concepting Phase -->
+		<section id="concepting" class="phase-section">
+			<div class="wrapper">
+				<div class="phase-header">
+					<h2>Concepting</h2>
+					<h3>Proof of Concept Explorations</h3>
+				</div>
+				<p class="phase-description">
+					During the concepting phase, we developed multiple POC one-pagers to explore different directions for interactive AI experiences in Eindhoven.
+					Each concept presented a unique approach to engaging the public with city heritage through technology.
+				</p>
+				<div class="link-cards"></div>
+			</div>
+		</section>
+
+		<!-- Validation & Meetings Phase -->
+		<section id="validation" class="phase-section">
+			<div class="wrapper">
+				<div class="phase-header">
+					<h2>Validation & Meetings</h2>
+					<h3>Testing, Feedback & Stakeholder Engagement</h3>
+				</div>
+				<p class="phase-description">
+					We validated our concept through user testing at the AI & Data Event, gathered survey data, and maintained regular communication with stakeholders.
+					This phase included standups, retrospectives, legal consultations, and iterative refinement based on feedback.
+				</p>
+				<div class="link-cards"></div>
+			</div>
+		</section>
+
+		<!-- Planning Phase -->
+		<section id="planning" class="phase-section">
+			<div class="wrapper">
+				<div class="phase-header">
+					<h2>Planning</h2>
+					<h3>Roadmap, Milestones & Deliverables</h3>
+				</div>
+				<p class="phase-description">
+					Our planning artifacts include timelines, next-step definitions, deliverable checklists, and process documentation.
+					These materials ensured clear ownership, milestone tracking, and structured workflow throughout the semester.
+				</p>
+				<div class="link-cards"></div>
+			</div>
+		</section>
+
+		<script>
+			// Timeline active state on scroll
+			const timelineItems = document.querySelectorAll('.timeline-item');
+			const sections = document.querySelectorAll('.phase-section');
+			const timelineSection = document.querySelector('.timeline-container');
+			const timelineSpacer = document.querySelector('.timeline-spacer');
+			let timelineOffsetTop = 0;
+
+			function setActiveTimeline() {
+				let currentSection = '';
+				sections.forEach(section => {
+					const sectionTop = section.offsetTop;
+					if (window.scrollY >= sectionTop - 400) {
+						currentSection = section.getAttribute('id');
+					}
+				});
+
+				timelineItems.forEach(item => {
+					item.classList.remove('active');
+					if (item.getAttribute('href') === `#${currentSection}`) {
+						item.classList.add('active');
+					}
+				});
+			}
+
+			function handleTimelineStick() {
+				if (!timelineSection) return;
+				const shouldStick = window.scrollY >= timelineOffsetTop;
+				if (shouldStick) {
+					timelineSection.classList.add('is-fixed');
+					if (timelineSpacer) timelineSpacer.style.display = 'block';
+				} else {
+					timelineSection.classList.remove('is-fixed');
+					if (timelineSpacer) timelineSpacer.style.display = 'none';
+				}
+			}
+
+			function measureTimeline() {
+				if (!timelineSection) return;
+				timelineSection.classList.remove('is-fixed');
+				if (timelineSpacer) timelineSpacer.style.display = 'none';
+				timelineOffsetTop = timelineSection.offsetTop;
+				if (timelineSpacer) {
+					timelineSpacer.style.height = `${timelineSection.offsetHeight}px`;
+				}
+				handleTimelineStick();
+			}
+
+			window.addEventListener('scroll', () => {
+				handleTimelineStick();
+				setActiveTimeline();
+			});
+
+			window.addEventListener('resize', measureTimeline);
+			window.addEventListener('load', () => {
+				measureTimeline();
+				setActiveTimeline();
+			});
+		</script>
+
+		<div id="footer-placeholder"></div>
+		<script src="static/js/components.js"></script>
+		<script src="static/js/cards-data.js"></script>
+	</body>
+</html>
