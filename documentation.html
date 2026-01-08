@@ -207,8 +207,11 @@
 
 			window.addEventListener('resize', measureTimeline);
 			window.addEventListener('load', () => {
-				measureTimeline();
-				setActiveTimeline();
+				// Delay measurement to account for async header loading
+				setTimeout(() => {
+					measureTimeline();
+					setActiveTimeline();
+				}, 100);
 			});
 		</script>
 
