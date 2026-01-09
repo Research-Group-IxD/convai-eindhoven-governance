@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>FRITS TTS</title>
+    <style>
+      :root {
+        --primary-color: #4f46e5; /* Indigo 600 */
+        --primary-hover: #4338ca; /* Indigo 700 */
+        --bg-color: #f8fafc; /* Slate 50 */
+        --card-bg: #ffffff;
+        --text-color: #0f172a; /* Slate 900 */
+        --secondary-text: #64748b; /* Slate 500 */
+        --border-color: #cbd5e1; /* Slate 300 */
+        --radius: 12px;
+        --spacing: 16px;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        margin: 0;
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background-color: var(--card-bg);
+        border-radius: 18px;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+          0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 980px;
+        padding: 32px;
+        box-sizing: border-box;
+        height: fit-content;
+      }
+
+      .grid-layout {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 32px;
+        align-items: start;
+      }
+
+      /* iPad-first: optimize for ~768-1024px widths */
+      @media (min-width: 768px) and (max-width: 1180px) {
+        .container { max-width: 1024px; padding: 28px; }
+        .grid-layout { grid-template-columns: 1fr; gap: 24px; }
+        textarea, select, input[type="text"], input[type="number"] { font-size: 18px; padding: 14px; }
+        button { padding: 18px; font-size: 18px; border-radius: 14px; }
+        label { font-size: 13px; }
+      }
+
+      @media (max-width: 767px) {
+        .grid-layout {
+          grid-template-columns: 1fr;
+        }
+        .container { padding: 20px; }
+        button { padding: 16px; font-size: 17px; }
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-size: 24px;
+      }
+
+      #status {
+        text-align: center;
+        margin-bottom: 32px;
+        font-size: 0.9em;
+        color: var(--secondary-text);
+      }
+
+      .section {
+        margin-bottom: 24px;
+      }
+
+      label {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--secondary-text);
+        margin-bottom: 8px;
+        letter-spacing: 0.5px;
+      }
+
+      textarea,
+      select,
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 12px;
+        border-radius: var(--radius);
+        border: 1px solid var(--border-color);
+        font-size: 16px;
+        font-family: inherit;
+        box-sizing: border-box;
+        background-color: #fff;
+        transition: border-color 0.2s;
+      }
+
+      textarea:focus,
+      select:focus,
+      input:focus {
+        outline: none;
+        border-color: var(--primary-color);
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .row {
+        display: flex;
+        gap: var(--spacing);
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .col {
+        flex: 1;
+      }
+
+      /* Custom File Input */
+      input[type="file"] {
+        font-size: 14px;
+        color: var(--secondary-text);
+      }
+
+      /* Sliders */
+      .slider-group {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      input[type="range"] {
+        flex: 1;
+        accent-color: var(--primary-color);
+        cursor: pointer;
+      }
+
+      input[type="number"] {
+        width: 70px;
+        text-align: center;
+      }
+
+      button {
+        width: 100%;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 18px;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 14px;
+        cursor: pointer;
+        transition: background-color 0.2s, transform 0.1s;
+        touch-action: manipulation;
+      }
+
+      button:hover {
+        background-color: var(--primary-hover);
+      }
+
+      button:active {
+        transform: scale(0.98);
+      }
+
+      #result {
+        margin-top: 32px;
+        text-align: center;
+        padding-top: 24px;
+        border-top: 1px solid #f0f0f0;
+      }
+
+      audio {
+        width: 100%;
+        margin-bottom: 12px;
+        border-radius: 10px;
+      }
+
+      a.download-link {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      a.download-link:hover {
+        text-decoration: underline;
+      }
+
+      .divider {
+        height: 1px;
+        background-color: #e5e5e5;
+        margin: 24px 0;
+      }
+
+      /* Loading Animation */
+      .loader-container {
+        width: 100%;
+        background-color: #e2e8f0;
+        border-radius: 999px;
+        overflow: hidden;
+        height: 6px;
+        margin-top: 12px;
+      }
+
+      .loader-bar {
+        height: 100%;
+        width: 40%;
+        background-color: var(--primary-color);
+        border-radius: 999px;
+        animation: loading 1.5s infinite ease-in-out;
+      }
+
+      @keyframes loading {
+        0% {
+          transform: translateX(-150%);
+        }
+        50% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(250%);
+        }
+      }
+
+      .loading-text {
+        color: var(--secondary-text);
+        font-size: 14px;
+        font-weight: 500;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 0.6;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>FRITS TTS</h2>
+      <div id="status">Checking server status...</div>
+
+      <div class="grid-layout">
+        <div class="left-panel">
+          <div class="section">
+            <label for="text">Text to synthesize</label>
+            <textarea id="text" placeholder="Enter text here...">
+Hello! This is Frits, what's up?</textarea
+            >
+          </div>
+
+          <div class="section">
+            <div class="row">
+              <div class="col">
+                <label for="language">Language</label>
+                <select id="language">
+                  <option value="en">English</option>
+                  <option value="nl">Dutch (Nederlands)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="audioFile">Reference Audio (Optional)</label>
+                <select id="audioFile">
+                  <option value="">-- Default Voice --</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="upload">Or Upload Reference</label>
+                <input id="upload" type="file" accept="audio/*" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-panel">
+          <div class="section">
+            <div class="row">
+              <div class="col">
+                <label for="cfg_weight">CFG Weight (Similarity)</label>
+                <div class="slider-group">
+                  <input
+                    id="cfg_weight"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.5"
+                  />
+                  <input
+                    id="cfg_weight_val"
+                    type="number"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.5"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="exaggeration">Exaggeration (Emotion)</label>
+                <div class="slider-group">
+                  <input
+                    id="exaggeration"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.1"
+                    value="0.5"
+                    oninput="document.getElementById('ex_val').innerText = this.value"
+                  />
+                  <span id="ex_val">0.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button id="synth">Synthesize Audio</button>
+
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      async function refreshAudioFiles() {
+        try {
+          // Check info first
+          const infoResp = await fetch("http://localhost:8000/info");
+          if (infoResp.ok) {
+            const info = await infoResp.json();
+            const statusDiv = document.getElementById("status");
+            if (info.device === "cuda") {
+              statusDiv.innerHTML = `✅ Server running on <strong>GPU (${info.gpu_name})</strong>`;
+              statusDiv.style.color = "#34c759"; // Apple green
+            } else {
+              statusDiv.innerHTML = `⚠️ Server running on <strong>CPU</strong>. Synthesis will be slow.`;
+              statusDiv.style.color = "#ff3b30"; // Apple red
+            }
+          }
+
+          const r = await fetch("http://localhost:8000/audio_files");
+          if (!r.ok) {
+            const t = await r.text().catch(() => "");
+            console.error("audio_files responded", r.status, t);
+            return;
+          }
+          const j = await r.json();
+          const sel = document.getElementById("audioFile");
+          // clear any existing options except the first placeholder
+          while (sel.options.length > 1) sel.remove(1);
+          j.files.forEach((f) => {
+            const opt = document.createElement("option");
+            opt.value = f;
+            opt.text = f;
+            sel.appendChild(opt);
+          });
+        } catch (e) {
+          console.warn("Could not load audio file list", e);
+        }
+      }
+
+      // sync range inputs with number inputs
+      function syncRanges() {
+        const cfg = document.getElementById("cfg_weight");
+        const cfgVal = document.getElementById("cfg_weight_val");
+        cfg.addEventListener("input", () => (cfgVal.value = cfg.value));
+        cfgVal.addEventListener("input", () => (cfg.value = cfgVal.value));
+
+        const ex = document.getElementById("exaggeration");
+        const exVal = document.getElementById("exaggeration_val");
+        ex.addEventListener("input", () => (exVal.value = ex.value));
+        exVal.addEventListener("input", () => (ex.value = exVal.value));
+      }
+
+      document.getElementById("synth").addEventListener("click", async () => {
+        const text = document.getElementById("text").value;
+        const fileSelect = document.getElementById("audioFile").value;
+        const uploadInput = document.getElementById("upload");
+
+        const form = new FormData();
+        form.append("text", text);
+        if (fileSelect) form.append("use_file", fileSelect);
+        const lang = document.getElementById("language").value;
+        if (lang) form.append("language_id", lang);
+        // append cfg_weight / exaggeration
+        const cfg = document.getElementById("cfg_weight").value;
+        const ex = document.getElementById("exaggeration").value;
+        form.append("cfg_weight", cfg);
+        form.append("exaggeration", ex);
+        if (uploadInput.files.length)
+          form.append("audio_prompt", uploadInput.files[0]);
+
+        const resDiv = document.getElementById("result");
+        resDiv.innerHTML = `
+          <div class="loading-text">Synthesizing Audio...</div>
+          <div class="loader-container">
+            <div class="loader-bar"></div>
+          </div>
+        `;
+
+        try {
+          const resp = await fetch("http://localhost:8000/synthesize", {
+            method: "POST",
+            body: form,
+          });
+          if (!resp.ok) {
+            const text = await resp.text().catch(() => "(no body)");
+            const msg = `Server error ${resp.status}: ${text}`;
+            console.error(msg);
+            resDiv.innerText = msg;
+            resDiv.style.color = "#ff3b30";
+            return;
+          }
+          const j = await resp.json();
+          // If using Live Server, the static files are served by our FastAPI backend at :8000,
+          // so make sure the backend is running. We construct a player using the backend origin.
+          const player = document.createElement("audio");
+          player.controls = true;
+          player.src = "http://localhost:8000" + j.url;
+          resDiv.innerHTML = "";
+          resDiv.appendChild(player);
+          const link = document.createElement("a");
+          link.href = player.src;
+          link.textContent = "Download WAV";
+          link.className = "download-link";
+          link.style.display = "block";
+          resDiv.appendChild(link);
+        } catch (err) {
+          // Provide more diagnostic info for common network errors
+          console.error("Fetch error", err);
+          resDiv.innerText =
+            "NetworkError while contacting backend. Is the backend running on http://localhost:8000 ?\n" +
+            (err.message || err);
+          resDiv.style.color = "#ff3b30";
+        }
+      });
+
+      refreshAudioFiles();
+      syncRanges();
+    </script>
+  </body>
+</html>

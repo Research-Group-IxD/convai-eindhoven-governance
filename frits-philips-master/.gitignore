@@ -1,0 +1,118 @@
+# General
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+pip-wheel-metadata/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.venv.bak/
+venv.bak/
+
+# Installer / wheel caches
+*.whl
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+debug.log
+
+# Python tooling
+.pytest_cache/
+.coverage
+.coverage.*
+.mypy_cache/
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Secrets / environment files
+.env
+.env.*
+.env.local
+secrets.json
+credentials.json
+*.pem
+*.key
+*.crt
+
+# Data, models, checkpoints, outputs (do not commit large blobs)
+outputs/
+data/
+datasets/
+downloads/
+checkpoints/
+models/
+model_weights/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.h5
+*.npz
+
+# Audio files
+# We ignore general audio files to avoid bloating the repo with recordings
+# BUT we explicitly allow the 'audio_files' directory and its contents 
+# because they contain the reference voice for Frits.
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+!audio_files/
+!audio_files/*.mp3
+!audio_files/*.wav
+
+# C extensions / compiled
+*.so
+*.dylib
+*.dll
+
+# Caches (including ML / HF caches)
+.cache/
+.cache/huggingface/
+transformers_cache/
+torch_cache/
+huggingface/
+hf_cache/
+
+# Node (if present)
+node_modules/
+
+# Docker / containers
+docker-compose.override.yml
+
+# Misc
+*.egg
+*.egg-info/
