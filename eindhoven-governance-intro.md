@@ -1,134 +1,98 @@
-# Eindhoven-Governance: Teaching AI to Listen to Cities
+# Project Component: Legal and Ethical Frameworks for AI Frits
 
-## For Students New to AI: Your First Conversation with a City
+## Purpose of this component
+This part of the project describes the legal, ethical and usage-related considerations surrounding AI Frits. It is intended to give new project members a clear and immediate understanding of the conditions under which AI Frits may be developed and deployed, as well as which decisions are still open.
 
-**What if you could teach a computer to understand what makes a neighborhood thrive?**
-
-Welcome to Eindhoven-Governance, where you'll learn AI not through abstract datasets, but by building technology that actually listens to people and places. This isn't about replacing human judgment—it's about amplifying human wisdom at city scale.
-
-### Why This Matters (And Why It's Perfect for Learning AI)
-
-Right now, as you read this, Eindhoven is humming with life. Someone is discovering a shortcut between two squares. A tree is cleaning the air. A conversation on a bench is turning strangers into neighbors. Night-shift workers are navigating empty streets. New arrivals are trying to understand how this place works.
-
-**Your challenge:** Can you build AI that notices what matters to real people in real places?
-
-This project sits under the umbrella of **The Reflective City**—a vision where Eindhoven becomes a place that learns in public, where technology serves communities rather than surveilling them, and where everyone gets to be a co-author of how their city grows.
-
-### What You'll Actually Build
-
-Instead of starting with theory, you'll start with questions people actually ask:
-
-- **"Is this neighborhood safe for my evening walk?"** → Learn classification and sensor fusion
-- **"Where can I find community in this city?"** → Explore recommendation systems and social network analysis  
-- **"How does energy flow through my building?"** → Discover time series analysis and pattern recognition
-- **"What would happen if we pedestrianized this street?"** → Build simulation and scenario modeling
-
-Each AI technique you learn will solve a real governance challenge. Each algorithm will make the city a little more responsive to the people who live in it.
-
-### Your 18-Week Journey: From Curiosity to Civic Impact
-
-Working in teams of 4-5 students, you'll build something real that could actually serve Eindhoven's communities. Here's how your semester unfolds:
-
-#### Phase 1: Foundation & Discovery (Weeks 1-4)
-**Week 1-2: Team Formation & City Listening**
-- Form diverse teams (mix backgrounds, interests, perspectives)
-- Each team adopts a specific community or challenge in Eindhoven
-- Conduct "listening sessions"—interviews, observations, data exploration
-- Learn: Research methods, data ethics, stakeholder mapping
-
-**Week 3-4: Problem Definition & AI Fundamentals** 
-- Define your team's specific governance challenge
-- Crash course in Python, data manipulation, and basic statistics
-- Introduction to machine learning concepts through your chosen problem
-- Learn: Python basics, pandas, matplotlib, problem framing
-
-#### Phase 2: Core AI Skills Through Civic Lens (Weeks 5-12)
-**Week 5-7: Pattern Recognition in Communities**
-- Classification: "How do we recognize different community needs?"
-- Clustering: "What makes neighborhoods similar or different?"
-- Apply to your team's chosen domain (housing, mobility, energy, etc.)
-- Learn: scikit-learn, supervised/unsupervised learning, evaluation metrics
-
-**Week 8-10: Understanding Language & Images of the City**
-- Natural Language Processing: analyzing community feedback, social media, policy documents
-- Computer Vision: understanding urban spaces through imagery (with privacy safeguards)
-- Team specialization begins—each team goes deep on their domain
-- Learn: NLTK/spaCy, OpenCV/PIL, transformer models, ethical data collection
-
-**Week 11-12: Time, Space, and Networks**
-- Time series analysis: energy flows, traffic patterns, community engagement over time
-- Spatial analysis: geographic patterns, accessibility, urban planning
-- Network analysis: how communities connect, information flows, collaboration patterns
-- Learn: temporal modeling, GIS basics, graph theory, systems thinking
-
-#### Phase 3: Building Your Reflective City Component (Weeks 13-16)
-**Week 13-14: Prototype Development**
-- Teams build their core AI system
-- Focus on one specific use case that real people would actually use
-- Weekly check-ins with community stakeholders (simulated or real)
-- Learn: API design, user interface basics, deployment fundamentals
-
-**Week 15-16: Integration & Testing**
-- Connect your system to real data sources
-- Test with potential users (community members, city officials, fellow students)
-- Iterate based on feedback—both technical and social
-- Learn: system integration, user testing, iterative design
-
-#### Phase 4: Impact & Reflection (Weeks 17-18)
-**Week 17: Public Presentation**
-- Teams present to mixed audience: students, faculty, community representatives
-- Demo your working system and share your learning journey
-- Discuss how your work could integrate with broader Reflective City vision
-
-**Week 18: Documentation & Handoff**
-- Create comprehensive documentation for future teams
-- Reflect on ethical implications and lessons learned
-- Plan how your work could continue beyond the course
-
-### Why This Approach Works for AI Learning
-
-**🎯 Immediate Relevance:** Every algorithm you learn has a clear purpose—making cities more livable and responsive.
-
-**🔄 Iterative Feedback:** You'll test your ideas with real people and see how AI performs in the messy, wonderful complexity of actual communities.
-
-**⚖️ Ethics from Day One:** You'll grapple with questions of consent, bias, and power from your first line of code—because these aren't advanced topics, they're fundamental to responsible AI.
-
-**🌍 Systems Thinking:** Cities are complex systems. You'll learn to see how technical choices ripple through social, economic, and environmental networks.
-
-**🤝 Collaboration Skills:** Just like the Reflective City vision, you'll work across disciplines—talking to designers, urban planners, community organizers, and residents.
-
-### Your Team's Impact: Building the Future Together
-
-By the end of 18 weeks, your team won't just understand AI—you'll have built a working piece of the Reflective City. You'll have:
-
-- **Created something real** that addresses an actual governance challenge
-- **Collaborated across disciplines** with teammates who bring different perspectives  
-- **Engaged with communities** to understand how technology can serve rather than extract
-- **Mastered core AI skills** through meaningful, impactful application
-- **Developed ethical reflexes** for responsible AI development
-- **Built systems thinking** skills for complex urban challenges
-
-**The ripple effect:** Your semester project could become a starting point for thesis work, startup ideas, or actual civic initiatives. Past teams have seen their work influence city policy, inspire community organizations, and launch careers in civic technology.
-
-### Team Formation Strategy
-
-Since you'll be working in teams of 4-5, think about assembling complementary skills:
-- **The Questioner:** Great at understanding people and problems
-- **The Builder:** Loves coding and making things work  
-- **The Analyst:** Enjoys diving deep into data and patterns
-- **The Communicator:** Skilled at explaining complex ideas simply
-- **The Connector:** Good at seeing how everything fits together
-
-*Don't worry if you don't see yourself clearly in one category—the best teams have people who can flex across multiple roles.*
-
-### Ready to Begin?
-
-The city is waiting for your team's questions. Eindhoven is ready to teach you AI, and you're ready to teach AI about what cities could become.
-
-**Your first team assignment:** As a group, explore any neighborhood (virtually or physically). Each team member should notice three things that work well and three things that could work better. Come together and ask: "What patterns do we see? What would we want to ask the city if it could speak?" That collaborative curiosity—that willingness to listen before building—is the foundation of everything you'll accomplish this semester.
-
-Welcome to Eindhoven-Governance. Let's build the future together.
+The input for this component comes from a conversation held on **November 20, 2025** with **Vivian Dank**, during which the operation of AI Frits, the project phases and potential risks were discussed.
 
 ---
 
-*Part of [The Reflective City: Eindhoven as a Living Mirror](./reflective-city-eindhoven.md) initiative*
+## Core themes
+During the conversation, two main themes were identified that guide further development:
+
+1. What the user actually does when interacting with AI Frits  
+2. How far the project is allowed to go in recreating Frits Philips using AI  
+
+These themes determine both the technical choices and the legal and ethical boundaries of the project.
+
+---
+
+## 1. User interaction and data usage
+
+### Deployment scenarios
+Within the project, two possible end scenarios are being explored:
+
+- Deployment of AI Frits in the **Philips Museum**
+- Deployment of AI Frits on the **Market Square in Eindhoven**
+
+In both scenarios, the goal is for conversations to feel natural. To achieve this, it may be desirable for AI Frits to remember small pieces of information during a conversation, such as a name, age or hobby.
+
+### Consent and privacy
+As soon as AI Frits stores personal data, even in a very limited form, **active user consent is required**. This consent must:
+
+- Be clear and explicit  
+- Include agreement with the privacy conditions  
+- Be given in advance, not implicitly afterward  
+
+### Public versus non-public space
+The discussion made it clear that this process is significantly easier to manage in a **non-public environment**.
+
+A museum context offers:
+- Greater control over interaction  
+- Space for clear explanation and informed consent  
+- Fewer legal and practical risks  
+
+For this reason, the Philips Museum is currently considered the most logical starting point for further development.
+
+---
+
+## 2. Recreating Frits Philips with AI
+
+Within the project, Frits is brought to life on three levels:
+
+1. **Character**  
+2. **Voice**  
+3. **Visual representation (face)**  
+
+### Character
+Recreating the character of Frits does not pose legal issues. This is achieved through prompts, behavioral rules and curated knowledge, and falls within standard AI applications.
+
+### Voice
+Two options are being explored for the voice:
+
+- Generating a voice based on a **description** of his voice  
+- **Cloning** the voice using existing audio material  
+
+The second option falls under stricter deepfake regulations. Vivian will follow up on this, as it is legally more sensitive.
+
+### Visual representation
+Creating a deepfake face of Frits is not automatically prohibited, partly because Frits is deceased. However, according to the AI Act, it must always be **clearly communicated** that users are interacting with AI and not with a real person.
+
+Transparency is a strict requirement.
+
+---
+
+## 3. Ethical considerations
+
+In addition to laws and regulations, there is a clear ethical dimension to the project. The central question is:
+
+_Is it desirable to recreate a deceased person using AI_
+
+Vivian advised explicitly including this question in the decision-making process. The project must make conscious choices regarding:
+
+- Respect for the historical individual  
+- User expectations  
+- The societal impact of such technology  
+
+This ethical reflection is not a side issue, but an integral part of the project design.
+
+---
+
+## Summary
+This project component focuses on the responsible deployment of AI Frits within clear legal and ethical boundaries. It defines:
+
+- How users are allowed to interact with AI Frits  
+- Which forms of recreation are permitted and appropriate  
+- Why context and transparency are essential  
+
+These principles form the foundation for further technical, design and implementation decisions within the project.

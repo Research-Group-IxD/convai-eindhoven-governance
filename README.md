@@ -1,42 +1,30 @@
-# IxD Research Project Template
+# IxD Research Project: Eindhoven Governance
 
-A clean, modern, and mobile-friendly template for creating academic project pages. This template is maintained by the [Fontys University of Applied Sciences' Interaction Design (IxD) Research Group](https://www.ixdfontysict.nl) to help students and researchers showcase their work effectively.
+The Eindhoven AI project explores how artificial intelligence can be responsibly designed and governed within a public, cultural, and urban context. The project focuses on the development of an interactive AI concept inspired by Eindhoven’s identity, history, and technological character, while critically examining how such systems should behave in open public environments.
 
-## Features
+A central part of the project is the investigation of governance and ethical challenges surrounding public AI systems. This includes questions of consent, transparency, authenticity, and the handling of unpredictable or inappropriate user behavior. By combining interaction design research with stakeholder perspectives, the project aims to establish clear guidelines for the responsible deployment of AI in public spaces.
 
-This template includes pre-built sections for common academic project page components:
+## Project Scope
 
-- **Teaser Video:** A prominent video banner to showcase your project's main outcome.
-- **Image & Video Carousels:** Display multiple images and videos in a clean, interactive format.
-- **Embedded Content:** Easily embed YouTube videos and PDF posters.
-- **BibTeX Citation:** A pre-formatted BibTeX entry to make it easy for others to cite your work.
-- **Responsive Design:** Looks great on desktops, tablets, and mobile devices.
+The project addresses both conceptual and practical aspects of public-facing AI:
 
-## How to Use This Template
+- **Interaction Design:** Designing AI behavior that is understandable, respectful, and context-aware.  
+- **Governance & Ethics:** Exploring responsibility, accountability, and ethical boundaries in public AI use.  
+- **Public Interaction:** Anticipating diverse audiences and forms of engagement, including misuse.  
+- **Societal Impact:** Assessing how AI influences public perception, trust, and cultural representation.
 
-Getting started is simple. Follow these steps to create your own project page:
+## Research Approach
 
-1.  **Create Your Repository:** Click the "**Use this template**" button at the top of this page to create a new repository with a copy of these files.
-2.  **Clone Your New Repository:** Clone the repository you just created to your local machine.
-3.  **Customize the Content:** Edit the `index.html` file to replace all placeholder content with your own text, images, and videos. Detailed instructions are provided as comments within the HTML file.
-4.  **Deploy Your Website:** Deploy your project page using a service like GitHub Pages, Netlify, or Vercel.
+The project follows an IxD-driven research approach, combining desk research, design exploration, prototyping, and stakeholder feedback. Insights from ethical discussions and real-world testing are used to iterate on the AI concept and refine governance principles.
 
-## Customization Checklist
+## Outcome
 
-To ensure your project page is complete, make sure you update the following in `index.html`:
-
-- [ ] **Metadata:** Fill in the `<meta>` tags in the `<head>` section for SEO and social media previews.
-- [ ] **Title & Authors:** Update the project title and author information.
-- [ ] **Links:** Replace all placeholder links with your actual URLs (Paper, Code, Supplementary materials, etc.).
-- [ ] **Abstract:** Write a compelling abstract for your project.
-- [ ] **Visuals:** Replace all placeholder images and videos in the `static/` directory with your own.
-- [ ] **BibTeX Citation:** Update the BibTeX entry with your author details and the final URL of your project page.
-- [ ] **Favicon:** Replace the default `favicon.ico` in `static/images/` with your own icon.
+The outcome of the Eindhoven AI project is a well-founded AI concept supported by design decisions, ethical considerations, and governance guidelines. The project contributes to a broader understanding of how AI can be integrated into public spaces in a way that balances innovation with social responsibility.
 
 ## Acknowledgements
 
-This template was adapted from the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template) by Eliahu Horwitz, which was in turn inspired by the [Nerfies](https://nerfies.github.io/) project page.
+This project was developed within an Interaction Design research context and builds upon existing academic and design-oriented research into public AI systems and responsible technology.
 
 ## License
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). You are free to use and adapt this template, but we kindly ask that you provide attribution by linking back to this repository in your site's footer.
+This project and its documentation are shared under a Creative Commons Attribution–ShareAlike 4.0 International License.
