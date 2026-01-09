@@ -1,0 +1,1418 @@
+{
+  "entity": {
+    "type": "person",
+    "name": "Frederik Jacques Philips",
+    "known_as": "Frits Philips",
+    "nationality": "Nederlands",
+    "short_description": "Nederlands industrieel en vijfde bestuursvoorzitter van Philips (1961-1971)."
+  },
+  "personal_information": {
+    "birth": {
+      "date": "1905-04-16",
+      "place": "Eindhoven",
+      "country": "Nederland"
+    },
+    "death": {
+      "date": "2005-12-05",
+      "time_local": "23:43",
+      "place": "Eindhoven",
+      "country": "Nederland",
+      "age": 100,
+      "cause_context": "Overleed na een val met rugwervelbreuk en een bijkomende longontsteking."
+    },
+    "parents": {
+      "father": "Anton Philips",
+      "mother": "Anna de Jongh"
+    },
+    "siblings": [
+      { "name": "Annetje Philips", "relation": "oudere zus" },
+      { "name": "Jetty Philips", "relation": "jongere zus" }
+    ],
+    "marriage": {
+      "spouse": "Sylvia Philips-van Lennep",
+      "marriage_date": "1929-07-04",
+      "spouse_lifespan": "1905-1992",
+      "children_count": 7
+    }
+  },
+  "education": [
+    {
+      "field": "Werktuigbouwkunde",
+      "institution": "Technische Hogeschool Delft (TU Delft)",
+      "start_year": 1923,
+      "end_year": 1929,
+      "degree": "werktuigbouwkundig ingenieur"
+    }
+  ],
+  "organizations": [
+    {
+      "name": "Philips",
+      "roles": [
+        {
+          "title": "Onder-directeur en lid van de directie",
+          "start_date": "1935-10-18"
+        },
+        {
+          "title": "President / bestuursvoorzitter (vijfde)",
+          "start_year": 1961,
+          "end_year": 1971,
+          "predecessor": "Frans Otten",
+          "successor": "Henk van Riemsdijk"
+        }
+      ]
+    }
+  ],
+  "ww2_and_postwar": {
+    "context": "Tijdens de Tweede Wereldoorlog bleef Frits Philips in Nederland terwijl de top van het concern uitweek.",
+    "detention": {
+      "place": "Gijzelaarskamp Beekvliet, Sint-Michielsgestel",
+      "start_date": "1943-05-03",
+      "end_date": "1943-09-20"
+    },
+    "notable_actions": [
+      "Slaagde erin een deel van zijn Joodse personeel te behoeden voor deportatie."
+    ],
+    "recognition": [
+      {
+        "award": "Yad Vashem onderscheiding",
+        "date": "1996-01-11",
+        "reason": "Voor inzet om Joods personeel te behoeden."
+      }
+    ]
+  },
+  "associations_and_society": {
+    "psv_and_sport": [
+      {
+        "topic": "PSV en voorloper Philips Elftal",
+        "detail": "Verrichtte op 15 januari 1911 de aftrap van de eerste wedstrijd van het Philips Elftal, voorloper van PSV Eindhoven, op de plek van het huidige Philips Stadion.",
+        "date": "1911-01-15"
+      },
+      {
+        "topic": "Supporterschap",
+        "detail": "Bleef zijn hele leven actief supporter van de club."
+      }
+    ],
+    "scouting": [
+      {
+        "detail": "Was in zijn jeugd welp en verkenner en had zeer positieve herinneringen aan scouting.",
+        "organizations": [
+          {
+            "name": "Scouting Wielewaal",
+            "note": "Sinds 1947 een blokhut op zijn landgoed; bezocht deze op latere leeftijd regelmatig."
+          }
+        ]
+      }
+    ],
+    "aviation_club": [
+      {
+        "name": "Eindhovense Aero Club",
+        "founded": 1932,
+        "original_name": "Noord-Brabantsche Aero Club (NBAC)",
+        "chairman_since": 1938,
+        "later_split": ["EAC-m", "EAC-zc"]
+      }
+    ],
+    "public_image": [
+      "Werd bij verenigingen vaak aangesproken als 'meneer Frits'.",
+      "Werd in Eindhoven vaak de 'koning van Eindhoven' genoemd (inofficieel)."
+    ]
+  },
+  "centenary_and_legacy": {
+    "centenary_2005": {
+      "city": "Eindhoven",
+      "activities": [
+        "Diverse festiviteiten",
+        "Penning met beeltenis van 'meneer Frits'",
+        "Speciale bewaareditie door Eindhovens Dagblad",
+        "Lichtjesroute eerbetoon met lichtraamwerk met afbeelding"
+      ]
+    },
+    "statue": {
+      "location": "Markt, Eindhoven",
+      "unveiled_date": "2007-04-14",
+      "artist": "Kees Verkade"
+    },
+    "burial": {
+      "date": "2005-12-12",
+      "location": "Algemene Begraafplaats Oude Toren, Eindhoven",
+      "note": "Na een tocht door het centrum van Eindhoven met duizenden aanwezigen; begraven bij zijn echtgenote."
+    },
+    "named_after": [
+      {
+        "name": "Muziekgebouw Frits Philips Eindhoven",
+        "since_year": 1995,
+        "type": "gebouw"
+      },
+      {
+        "name": "Woontoren 'Frits' (Eindhoven)",
+        "year_completed": 2022,
+        "type": "gebouw"
+      }
+    ]
+  },
+  "honors_and_awards": [
+    {
+      "name": "Frederik Philips Award (IEEE samenwerking)",
+      "year_established": 1971,
+      "note": "Jaarlijkse prijs voor verdiensten in management van R&D leidend tot innovatie; Frits ontving de eerste prijs in 1971."
+    },
+    {
+      "name": "Eredoctoraat Katholieke Universiteit Leuven",
+      "year": 1976
+    },
+    {
+      "name": "Eredoctoraat China Academy (Taipei)",
+      "year": 1976
+    },
+    {
+      "name": "International Executive of the Year Award",
+      "year": 1982,
+      "organization": "Brigham Young University School of Management (Provo, Utah)"
+    },
+    {
+      "name": "Grootofficier in de Orde van Oranje-Nassau",
+      "country": "Nederland"
+    },
+    {
+      "name": "Ridder in de Orde van de Nederlandse Leeuw",
+      "country": "Nederland"
+    },
+    {
+      "name": "Commandeurschap in de Orde van de Heilige Gregorius de Grote",
+      "country": "Vaticaan"
+    },
+    {
+      "name": "Yad Vashemmedaille van een Rechtvaardige onder de Volkeren",
+      "country": "Israël"
+    },
+    {
+      "name": "Grootkruis in de Orde van Verdienste",
+      "country": "Spanje"
+    },
+    {
+      "name": "Officier in het Legioen van Eer",
+      "country": "Frankrijk"
+    },
+    {
+      "name": "Eremedaille voor Voortvarendheid en Vernuft verbonden aan de Huisorde van Oranje",
+      "country": "Nederland"
+    },
+    {
+      "name": "Ereburger van Eindhoven",
+      "country": "Nederland"
+    },
+    {
+      "name": "Ereburger van Hasselt",
+      "country": "België"
+    }
+  ],
+  "art_collection_and_auction": {
+    "auction": {
+      "dates": ["2006-12-04", "2006-12-05"],
+      "auction_house": "Sotheby’s",
+      "location": "Evoluon, Eindhoven",
+      "total_proceeds_eur": 5700000
+    },
+    "foreword_in_catalogue": {
+      "title": "Herinneringen aan mijn vader",
+      "author": "Digna Hintzen-Philips",
+      "relation": "oudste dochter"
+    },
+    "notes": [
+      "De veiling omvatte onder meer tinnen voorwerpen, Delftse tegels, zilverwerk, schilderijen, globes, juwelen, boeken en ruim 300 memorabilia."
+    ],
+    "highlight_sales": [
+      {
+        "item": "Gildekan van het Voerliedengilde (toegeschreven aan Engelbertus Moorrees, jaarletter 1781)",
+        "price_eur": 36000
+      },
+      {
+        "item": "Set van vier zilveren kandelaars door Dirk ten Brink (Amsterdam, 1718)",
+        "price_eur": 108000
+      },
+      {
+        "item": "Paneel: tronende Maria met kind en engel (Meester van Saint Ildefonso)",
+        "price_eur": 258400
+      },
+      {
+        "item": "Schilderij: Schaapherder met zijn kudde (Anton Mauve)",
+        "price_note": "genoemd als opvallend Nederlands schilderij in de veilingbeschrijving"
+      },
+      {
+        "item": "Twee globes door Vincenzo Coronelli (rond 1696)",
+        "price_eur": 117000
+      }
+    ]
+  },
+  "publications": [
+    {
+      "year": 1976,
+      "authors": ["Frits Philips", "Leo Ott"],
+      "title": "45 jaar met Philips",
+      "publisher": "Ad. Donker",
+      "city": "Rotterdam",
+      "isbn": "90-6100-130-7"
+    }
+  ],
+  "literature_about": [
+    {
+      "year": 2013,
+      "authors": ["Özcan Akyol", "Gerrit de Jager"],
+      "title": "Philips' list : hoe Meneer Frits honderden joden redde",
+      "publisher": "Hard gras",
+      "city": "Gouda",
+      "isbn": "978-90-71359-72-9"
+    },
+    {
+      "year": 2005,
+      "author": "Guus Bekooy",
+      "title": "Frits Philips 100",
+      "publisher": "Aprilis",
+      "city": "Zaltbommel",
+      "isbn": "90-5994-084-9"
+    },
+    {
+      "year": 2005,
+      "author": "Dorothée Foole",
+      "title": "Meneer Frits, the human factor : 16 april 1905-16 april 2005: liber amicorum dr. ir. Frits Philips 100",
+      "publisher": "DFP",
+      "city": "Eindhoven",
+      "isbn": "90-76501-04-1"
+    },
+    {
+      "year": 2007,
+      "authors": ["Twan Hofman", "Blok Oh"],
+      "title": "Frits Philips : een beeld voor een monument",
+      "publisher": "De Boekenmakers",
+      "city": "Eindhoven",
+      "isbn": "978-90-77740-08-8"
+    }
+  ],
+  "references": [
+    {
+      "type": "akte",
+      "title": "Geboorteakte gemeente Eindhoven 1905 nummer 53",
+      "publisher_or_site": "rhc-eindhoven.nl",
+      "date": "1905-04-17",
+      "accessed": "2024-04-28"
+    },
+    {
+      "type": "boek",
+      "title": "Gedenkboek Beekvliet",
+      "year": 1946
+    },
+    {
+      "type": "krant",
+      "title": "'Als we nu Frits Philips niet onderscheiden, gebeurt dat nooit meer'",
+      "publisher": "Trouw",
+      "date": "1996-01-11",
+      "archived": "2024-04-28",
+      "accessed": "2022-02-10"
+    },
+    {
+      "type": "tijdschrift",
+      "title": "De oorlog van frits",
+      "author": "Pieter Lakeman",
+      "publisher": "De Groene Amsterdammer",
+      "date": "1966-01-17",
+      "issue_note": "1966 (3)",
+      "archived": "2023-03-22"
+    },
+    {
+      "type": "krant",
+      "title": "Eindhoven even omgedoopt tot Frits Philips Stad",
+      "author": "Peter de Graaf",
+      "publisher": "de Volkskrant",
+      "date": "2005-04-18",
+      "archived": "2022-02-10",
+      "accessed": "2022-02-10"
+    },
+    {
+      "type": "krant",
+      "title": "Zo’n 3 meter hoog en in brons: Frits Philips is terug",
+      "author": "Peter de Graaf",
+      "publisher": "de Volkskrant",
+      "date": "2007-04-13",
+      "archived": "2022-02-10",
+      "accessed": "2022-02-10"
+    },
+    {
+      "type": "krant",
+      "title": "Frits Philips (100) overleden",
+      "publisher": "Trouw",
+      "date": "2005-12-06",
+      "archived": "2024-04-28",
+      "accessed": "2022-02-10"
+    },
+    {
+      "type": "krant",
+      "title": "'Meneer Frits' is eigenlijk nooit echt met pensioen gegaan",
+      "author": "Peter de Graaf",
+      "publisher": "de Volkskrant",
+      "date": "2005-12-07",
+      "archived": "2022-02-10",
+      "accessed": "2022-02-10"
+    },
+    {
+      "type": "krant",
+      "title": "Jubilerende Ir. Philips krijgt boeiende fanmail „U hebt veel geld en ik niet\" Dicht slotje..",
+      "publisher": "NRC Handelsblad",
+      "date": "1970-12-02",
+      "archived": "2022-02-10",
+      "accessed": "2022-02-10"
+    },
+    {
+      "type": "krant",
+      "title": "Veiling collectie Frits Philips levert 5,7 miljoen op",
+      "publisher": "de Volkskrant",
+      "date": "2006-12-05",
+      "archived": "2022-02-10",
+      "accessed": "2022-02-10"
+    }
+  ],
+  "philips_ceo_sequence_context": {
+    "topic": "Bestuursvoorzitters van Philips (volgens aangeleverde lijst)",
+    "sequence": [
+      { "name": "Frederik Philips", "years": "1891-1899" },
+      { "name": "Gerard Philips", "years": "1891-1922" },
+      { "name": "Anton Philips", "years": "1922-1939" },
+      { "name": "Frans Otten", "years": "1939-1961" },
+      { "name": "Frits Philips", "years": "1961-1971" },
+      { "name": "Henk van Riemsdijk", "years": "1971-1977" },
+      { "name": "Nico Rodenburg", "years": "1977-1981" },
+      { "name": "Wisse Dekker", "years": "1982-1986" },
+      { "name": "Cor van der Klugt", "years": "1986-1990" },
+      { "name": "Jan Timmer", "years": "1990-1996" },
+      { "name": "Cor Boonstra", "years": "1996-2001" },
+      { "name": "Gerard Kleisterlee", "years": "2001-2011" },
+      { "name": "Frans van Houten", "years": "2011-2022" },
+      { "name": "Roy Jakobs", "years": "2022-heden" }
+    ]
+  },
+  "tags": [
+    "Philips",
+    "Eindhoven",
+    "Industrie",
+    "Tweede Wereldoorlog",
+    "PSV",
+    "Scouting",
+    "Bestuur",
+    "Erfgoed"
+  ],
+
+
+  "context_eindhoven": {
+    "type": "city_history_context",
+    "name": "Eindhoven",
+    "summary": "De geschiedenis van Eindhoven is nauw verweven met de opkomst van industrie en in het bijzonder met Philips. Van een kleine vestingstad groeide Eindhoven uit tot een internationaal technologisch centrum.",
+    "geography_and_origins": {
+      "origin": "Gestichte stad op hoger gelegen terrein tussen Dommel en Gender",
+      "first_rights": {
+        "year": 1232,
+        "granted_by": "Hertog Hendrik I van Brabant",
+        "rights": ["vrijheidsrechten", "marktrecht"]
+      },
+      "strategic_position": "Knooppunt van handelswegen tussen 's-Hertogenbosch, Luik, Antwerpen en Duitsland",
+      "urban_structure": "Regelmatig stratenpatroon, oorspronkelijk omwald; huidige straatnamen herinneren aan vestingwerken"
+    },
+    "political_and_social_history": {
+      "medieval_lordship": [
+        "Cranendonck",
+        "Schoonvorst",
+        "Egmont",
+        "Oranje-Nassau"
+      ],
+      "religion": {
+        "key_church": "Sint-Catharinakerk",
+        "transformations": [
+          "Katholiek",
+          "Protestants (1648)",
+          "Seculiere functies tijdens Franse tijd",
+          "Terug naar katholieke eredienst (1798)"
+        ]
+      }
+    },
+    "conflicts_and_wars": {
+      "gelderse_oorlogen": {
+        "impact": "Stadsbranden, plunderingen en verwoesting van omliggende dorpen",
+        "notable_event": "Stadsbrand van 1486 waarbij slechts zes huizen overeind bleven"
+      },
+      "eighty_years_war": {
+        "period": "1568-1648",
+        "impact": "Meervoudige bezettingen, plunderingen en uiteindelijke slechting van vestingwerken",
+        "outcome": "Eindhoven werd een open stad binnen de Generaliteitslanden"
+      },
+      "world_war_ii": {
+        "occupation": "1940-1944",
+        "bombardments": [
+          "Sinterklaasbombardement (1942)",
+          "Bombardementen 1943 en 1944"
+        ],
+        "jewish_community": {
+          "prewar": 430,
+          "postwar": 210,
+          "note": "Philips trachtte Joodse medewerkers te beschermen via werk in oorlogsproductie"
+        }
+      }
+    },
+    "economic_development": {
+      "pre_industrial": [
+        "Textiel",
+        "Leder",
+        "Sigaren",
+        "Hoeden",
+        "Drukkerijen"
+      ],
+      "industrial_turning_point": {
+        "year": 1891,
+        "event": "Oprichting van Philips in Eindhoven",
+        "impact": "Versnelling van industrialisatie en bevolkingsgroei"
+      },
+      "postwar_transition": {
+        "decline": [
+          "Textielindustrie",
+          "Sigarenindustrie",
+          "Luciferindustrie"
+        ],
+        "new_economy": [
+          "High tech",
+          "Medische technologie",
+          "Design en innovatie"
+        ]
+      }
+    },
+    "philips_and_city": {
+      "relationship": "Philips en Eindhoven groeiden symbiotisch",
+      "urban_impact": [
+        "Philipsdorp",
+        "Strijp-S",
+        "Lichttoren",
+        "NatLab en High Tech Campus"
+      ],
+      "social_structure": {
+        "features": [
+          "Bedrijfsscholen",
+          "Woningbouw",
+          "Sportverenigingen (PSV)",
+          "Culturele instellingen"
+        ],
+        "character": "Paternalistisch maar sociaal vormend"
+      }
+    },
+    "modern_eindhoven": {
+      "population_growth": {
+        "1995": 196963,
+        "2023": 243730
+      },
+      "identity": "Technologisch centrum met sterke focus op innovatie, design en gezondheidszorg",
+      "legacy_of_philips": [
+        "ASML spin-off",
+        "High Tech Campus",
+        "Behoud van iconische gebouwen"
+      ]
+    },
+    "relation_to_frits_philips": {
+      "symbolic_role": "Frits Philips werd gezien als het menselijke gezicht van Philips en daarmee van Eindhoven",
+      "nickname": "Koning van Eindhoven (inofficieel)",
+      "historical_alignment": "Zijn leven overspant de transformatie van Eindhoven van industriestad naar hightech regio"
+    }
+  },
+
+  "context_philips_history": {
+    "type": "company_history_context",
+    "name": "Koninklijke Philips",
+    "founded": {
+      "year": 1891,
+      "place": "Eindhoven",
+      "founders": [
+        "Gerard Philips",
+        "Frederik Philips"
+      ],
+      "original_activity": "Productie van gloeilampen en elektrotechnische artikelen"
+    },
+    "early_development": {
+      "key_figures": [
+        "Gerard Philips",
+        "Anton Philips"
+      ],
+      "innovations": [
+        "Kooldraad- en wolfraamgloeilampen",
+        "Eigen machinebouw",
+        "Opbouw van een sterk octrooiportfolio"
+      ],
+      "organizational_growth": [
+        "Oprichting NV Philips' Metaalgloeilampenfabriek (1907)",
+        "Oprichting NV Philips' Gloeilampenfabrieken (1912)"
+      ]
+    },
+    "research_and_innovation": {
+      "philosophy": "Structureel wetenschappelijk onderzoek als basis voor innovatie",
+      "key_institutions": [
+        "Philips Natuurkundig Laboratorium (NatLab)",
+        "Chemisch laboratorium",
+        "Eigen machinefabrieken"
+      ],
+      "notable_contributions": [
+        "Pentode",
+        "Compact cassette",
+        "Compact disc (samen met Sony)",
+        "Plumbicon-camera",
+        "Medische beeldvorming"
+      ],
+      "legacy": "NatLab vormde de basis voor de huidige High Tech Campus Eindhoven"
+    },
+    "industrial_strategy": {
+      "vertical_integration": {
+        "description": "Zelf produceren van essentiële onderdelen",
+        "examples": [
+          "Glasfabrieken",
+          "Gasproductie",
+          "Philite (bakeliet)",
+          "Golfkarton en papier"
+        ]
+      },
+      "horizontal_integration": {
+        "description": "Uitbreiding naar nieuwe productmarkten",
+        "domains": [
+          "Radio",
+          "Televisie",
+          "Medische technologie",
+          "Consumentenelektronica"
+        ]
+      }
+    },
+    "philips_and_society": {
+      "social_model": {
+        "character": "Paternalistisch industriebedrijf",
+        "elements": [
+          "Woningbouw (Philipsdorp)",
+          "Bedrijfsscholen",
+          "Philips Sport Vereniging (PSV)",
+          "Culturele en sociale voorzieningen"
+        ]
+      },
+      "criticism": [
+        "Sterke invloed op stad en werknemers",
+        "Beperkte ruimte voor vakbonden in vroege periode"
+      ]
+    },
+    "world_war_ii": {
+      "impact": "Bombardementen op fabrieken en morele dilemma’s rond oorlogsproductie",
+      "operation_oyster": {
+        "year": 1942,
+        "effect": "Zware schade aan fabrieken en binnenstad Eindhoven"
+      },
+      "continuity": "Dankzij buitenlandse vestigingen bleef Philips wereldwijd functioneren"
+    },
+    "postwar_growth": {
+      "period": "1945-1975",
+      "characteristics": [
+        "Explosieve personeelsgroei",
+        "Internationale expansie",
+        "Uitbouw van consumentenelektronica en medische systemen"
+      ],
+      "peak": {
+        "year": 1974,
+        "employees_worldwide": 412000
+      }
+    },
+    "transition_and_crisis": {
+      "challenges": [
+        "Concurrentie uit Japan",
+        "Trage overstap naar transistoren",
+        "Complexe matrixorganisatie"
+      ],
+      "failed_or_contested_products": [
+        "Video 2000",
+        "Cd-i",
+        "Digital Compact Cassette"
+      ]
+    },
+    "restructuring": {
+      "key_moment": {
+        "period": "1990-1996",
+        "name": "Operatie Centurion",
+        "leader": "Jan Timmer",
+        "impact": "Massale afslanking en afstoting van activiteiten"
+      },
+      "regional_effect": "Eindhoven transformeerde van Philips-stad naar hightech ecosysteem"
+    },
+    "spin_offs_and_legacy": {
+      "major_spin_offs": [
+        "ASML",
+        "NXP",
+        "Signify",
+        "Versuni"
+      ],
+      "economic_effect": "Sterke innovatie- en startupcultuur in de Brainport-regio"
+    },
+    "modern_philips": {
+      "focus": "Gezondheidszorg en medische technologie",
+      "core_domains": [
+        "Diagnostiek en beeldvorming",
+        "Patiëntbewaking",
+        "Connected Care",
+        "Persoonlijke gezondheid"
+      ],
+      "employees_2024": "<70000",
+      "r_and_d_ratio": "Ongeveer 10% van de omzet"
+    },
+    "governance_context": {
+      "family_influence": {
+        "period": "1891-1977",
+        "note": "Einde directe familie-invloed na vertrek Henk van Riemsdijk"
+      },
+      "ceo_sequence_alignment": "Frits Philips was bestuursvoorzitter tijdens de overgang van familiebedrijf naar professioneel bestuur"
+    },
+    "relation_to_frits_philips": {
+      "role": "Bestuursvoorzitter (1961-1971)",
+      "style": "Mensgericht, verbindend en maatschappelijk bewust",
+      "symbolism": "Belichaamde het sociale en morele gezicht van Philips"
+    },
+
+  "context_klokgebouw": {
+    "type": "heritage_building_context",
+    "name": "Klokgebouw",
+    "location": {
+      "city": "Eindhoven",
+      "district": "Strijp-S",
+      "country": "Nederland"
+    },
+    "identity": {
+      "status": "Monumentaal gebouw",
+      "name_origin": "Vernoemd naar de klok in de toren waarin de letters van Philips zijn verwerkt"
+    },
+    "relation_to_frits_philips": {
+      "career_start": true,
+      "roles": [
+        "Bedrijfsplanner",
+        "Productiecoördinator",
+        "Leveringsplanner"
+      ],
+      "symbolic_meaning": "Het Klokgebouw markeert het begin van Frits Philips’ loopbaan binnen het concern"
+    },
+    "architectural_history": {
+      "designer": "Bedrijfsarchitecten van Philips",
+      "original_structure": {
+        "floors": 7
+      },
+      "tower_addition": {
+        "period": "Eind jaren 1930",
+        "height_meters": 60,
+        "feature": "Iconische toren met Philips-klok"
+      }
+    },
+    "industrial_function": {
+      "primary_use": "Productie van Philite (Philips-bakeliet)",
+      "philite": {
+        "description": "Beschermde merknaam van Philips voor bakeliet",
+        "applications": [
+          "Behuizingen",
+          "Isolerende onderdelen"
+        ]
+      },
+      "water_reservoir": {
+        "location": "Bovenop het gebouw",
+        "function": "Opbouwen van waterdruk voor bakelietpersen"
+      }
+    },
+    "cultural_transformation": {
+      "symbolism": "Symbool voor de herontwikkeling en transformatie van Strijp-S",
+      "current_function": "Cultureel en creatief centrum",
+      "workspaces": {
+        "count": ">100",
+        "types": [
+          "Werkruimten",
+          "Ateliers",
+          "Vergaderruimtes",
+          "Fitnessruimtes"
+        ]
+      },
+      "creative_ecosystem": {
+        "entrepreneurs": ">100 creatieve ondernemers",
+        "performing_arts": [
+          "Voorstellingen",
+          "Shows",
+          "Festivals",
+          "Concerten"
+        ],
+        "music_and_dance": {
+          "organization": "Popcentrum POPEI",
+          "facilities": [
+            "Oefenruimtes",
+            "Podium"
+          ]
+        }
+      },
+      "events": {
+        "ground_floor_capacity": 10000,
+        "usage": "Grote evenementen, festivals en concerten"
+      }
+    },
+    "education_and_context": {
+      "nearby_institutions": [
+        "ROC artiesten- en rockopleiding"
+      ]
+    },
+    "relation_to_philips_and_eindhoven": {
+      "industrial_heritage": "Onderdeel van het voormalige Philips-industrieel complex",
+      "modern_role": "Verbindt industrieel erfgoed met creatieve economie"
+    },
+
+  "context_lichttoren": {
+    "type": "heritage_building_context",
+    "name": "De Lichttoren",
+    "location": {
+      "city": "Eindhoven",
+      "area": "Binnenstad",
+      "country": "Nederland"
+    },
+    "identity": {
+      "status": "Rijksmonument",
+      "architectural_style": [
+        "Functionalistisch",
+        "Kubisch expressionistisch"
+      ],
+      "form": "Zevenhoekige witte toren"
+    },
+    "architectural_history": {
+      "architects": "TABROS (Technisch Advies Bureau Roosenburg, Op ten Noort, Scheffer)",
+      "signed_drawings_by": "ir. L.S.P. Scheffer",
+      "construction_phases": [
+        {
+          "period": "1909-1911",
+          "description": "Bouw van het westelijke L-vormige deel van het huidige complex"
+        },
+        {
+          "period": "1919-1921",
+          "description": "Verlenging van de fabriek langs het spoor met ombuiging richting Emmasingel"
+        }
+      ]
+    },
+    "relation_to_philips": {
+      "original_function": "Fabriek van Philips Lighting",
+      "start_of_use": 1911,
+      "building_codes": {
+        "east_part": "ED",
+        "west_part": "EC"
+      },
+      "later_function": "Hoofdkantoor van de lichtdivisie van Philips"
+    },
+    "industrial_use": {
+      "testing_function": {
+        "location": "Bovenste etage",
+        "purpose": "Duurproeven van gloeilampen",
+        "cultural_effect": "Brandende lampen waren ’s avonds tot ver in de omgeving zichtbaar"
+      },
+      "name_origin": "Door deze lichtproeven kreeg het gebouw in de volksmond de naam ‘Lichttoren’"
+    },
+    "urban_context": {
+      "adjacent_buildings": [
+        "De Witte Dame"
+      ],
+      "symbolism": "Iconisch herkenningspunt van het industriële Philips-verleden in de Eindhovense binnenstad"
+    },
+    "transformation_and_current_use": {
+      "redevelopment": "Herontwikkeld tot woon-, werk- en ontspanningscomplex",
+      "ground_floor": {
+        "function": "Café-restaurants",
+        "since": "circa 2009"
+      },
+      "lighting": {
+        "technology": "LED-verlichting",
+        "since": "augustus 2009"
+      }
+    },
+    "relation_to_frits_philips": {
+      "contextual_link": "De Lichttoren symboliseert de periode waarin Philips Lighting en industriële innovatie het hart van Eindhoven vormden tijdens Frits Philips’ loopbaan",
+      "thematic_alignment": [
+        "Innovatie",
+        "Kwaliteitscontrole",
+        "Industriële trots"
+      ]
+    },
+    "relation_to_eindhoven": {
+      "historical_role": "Onderdeel van het vroege Philips-fabriekscomplex in het centrum",
+      "modern_role": "Voorbeeld van herbestemming van industrieel erfgoed in de stad"
+    },
+
+  "context_markt_eindhoven": {
+    "type": "urban_square_context",
+    "name": "De Markt",
+    "location": {
+      "city": "Eindhoven",
+      "area": "Centrum",
+      "country": "Nederland"
+    },
+    "historical_origin": {
+      "early_settlement_role": "Maakte al in de nederzettingsfase deel uit van Eindhoven",
+      "city_and_market_rights": {
+        "year": 1232,
+        "significance": "Vanaf dit jaar vervulde de Markt een centrale rol in handel en stedelijk leven"
+      }
+    },
+    "historical_function": {
+      "primary_role": "Handelsplein",
+      "markets": [
+        "Diverse historische warenmarkten",
+        "Huidige antiekmarkt op zaterdag"
+      ]
+    },
+    "social_and_urban_role": {
+      "current_function": "Sociaal ontmoetingsplein",
+      "dominant_features": [
+        "Horeca",
+        "Terrassen",
+        "Grand cafés",
+        "Restaurants"
+      ],
+      "public_attractions": [
+        "Permanente draaimolen van Vermolen"
+      ]
+    },
+    "urban_connections": {
+      "connected_landmarks": [
+        "Heuvel Galerie",
+        "Holland Casino",
+        "Muziekcentrum Frits Philips Eindhoven"
+      ],
+      "role_in_city_flow": "Verbindend plein tussen winkelen, cultuur en horeca"
+    },
+    "monuments_and_heritage": {
+      "overview": "Ondanks sloop van diverse historische panden zijn nog meerdere monumenten aanwezig",
+      "notable_monuments": [
+        {
+          "address": "Markt 23a",
+          "status": "Rijksmonument",
+          "description": "Woonhuis in de stijl van de Amsterdamse School uit 1925, zeldzaam voorbeeld in deze regio"
+        },
+        {
+          "address": "Marktstraat 1",
+          "status": "Gemeentelijk monument",
+          "description": "Voormalig bankgebouw, momenteel in gebruik door Kentucky Fried Chicken"
+        },
+        {
+          "addresses": ["Markt 9", "Markt 10", "Markt 11"],
+          "status": "Gemeentelijke monumenten",
+          "description": "Geïntegreerd in winkelcentrum Heuvel Galerie"
+        }
+      ]
+    },
+    "relation_to_frits_philips": {
+      "symbolic_link": "De Markt vormt het decor van stedelijk leven waar Eindhoven en Philipsgeschiedenis samenkomen",
+      "nearby_legacy": [
+        "Standbeeld van Frits Philips (Markt, onthuld 2007)",
+        "Muziekcentrum Frits Philips Eindhoven"
+      ],
+      "thematic_alignment": [
+        "Stedelijke verbondenheid",
+        "Publieke ruimte",
+        "Gemeenschapsgevoel"
+      ]
+    },
+    "relation_to_eindhoven": {
+      "historical_significance": "Eeuwenlang economisch en sociaal middelpunt van de stad",
+      "modern_significance": "Levendig stadsplein met nadruk op ontmoeting en cultuur"
+    },
+
+  "context_strijp_s": {
+    "type": "urban_district_context",
+    "name": "Strijp-S",
+    "location": {
+      "city": "Eindhoven",
+      "district": "Strijp",
+      "province": "Noord-Brabant",
+      "country": "Nederland"
+    },
+    "statistics": {
+      "population_2023": 3010,
+      "dwellings": 2251,
+      "average_woz_value_eur": 357000,
+      "area_km2": 0.3
+    },
+    "name_origin": {
+      "philips_industrial_parks": [
+        "Strijp-S",
+        "Strijp-T",
+        "Strijp-R"
+      ],
+      "naming_logic": "Interne Philips-benaming voor industrieparken",
+      "historical_spelling": "Strijp S",
+      "current_common_spelling": "Strijp-S",
+      "railway_station": "Station Strijp-S (sinds 2015)"
+    },
+    "industrial_history": {
+      "start_year": 1916,
+      "initiator": "Anton Philips",
+      "core_activities": [
+        "Glasproductie",
+        "Radiofabricage",
+        "Televisieproductie",
+        "Onderzoek en ontwikkeling"
+      ],
+      "philips_credo": "Van zand tot klant",
+      "key_facilities": [
+        {
+          "name": "Philips Natuurkundig Laboratorium (NatLab)",
+          "year": 1923,
+          "status": "Rijksmonument",
+          "significance": "Ontwikkeling van baanbrekende technologieën, waaronder de cd"
+        },
+        {
+          "name": "Hoge Rug",
+          "years_built": [1927, 1929, 1930],
+          "status": "Rijksmonument",
+          "function": "Assemblage van radio- en televisietoestellen"
+        },
+        {
+          "name": "Klokgebouw",
+          "year": 1928,
+          "status": "Rijksmonument",
+          "function": "Productie van Philite (bakeliet)"
+        },
+        {
+          "name": "Veemgebouw",
+          "year": 1942,
+          "status": "Rijksmonument",
+          "function": "Opslag van Philips-producten"
+        },
+        {
+          "name": "Ketelhuis en Machinekamer",
+          "year": 1929,
+          "function": "Opwekking van gas, stoom en energie"
+        }
+      ]
+    },
+    "wartime_events": {
+      "bombardments": [
+        {
+          "date": "6 december 1942",
+          "type": "RAF precisiebombardement",
+          "reason": "Productie van radio- en radaronderdelen"
+        },
+        {
+          "date": "19 september 1944",
+          "type": "Duits bombardement",
+          "context": "Na de bevrijding van Eindhoven"
+        }
+      ]
+    },
+    "forbidden_city_phase": {
+      "nickname": "Verboden stad",
+      "description": "Niet vrij toegankelijk industrieterrein, maar met dagelijks duizenden werknemers"
+    },
+    "departure_of_philips": {
+      "period": "1990-2016",
+      "sale_year": 2002,
+      "sale_amount_eur": 140000000,
+      "new_owner": "Park Strijp Beheer B.V.",
+      "structure": "Publiek-private samenwerking Gemeente Eindhoven en VolkerWessels",
+      "remaining_philips_presence": [
+        "Gebouwen SFH",
+        "Gebouw SEY"
+      ]
+    },
+    "urban_transformation": {
+      "vision": "Old Buildings, New Ideas",
+      "focus": [
+        "Creatieve sector",
+        "Design",
+        "Technologie"
+      ],
+      "education": [
+        {
+          "institution": "SintLucas",
+          "year": 2016,
+          "focus": "Creatief en technologisch onderwijs"
+        }
+      ]
+    },
+    "housing_development": {
+      "first_residents_year": 2012,
+      "notable_projects": [
+        "Anton",
+        "Gerard",
+        "SAS-3",
+        "SPACE-S",
+        "Blok 59, 61, 63",
+        "Sixty5",
+        "Haasje Over",
+        "LUX",
+        "Trudo Toren",
+        "Frits (S-West)",
+        "Opbouw Veem"
+      ],
+      "architectural_references": [
+        "Bosco Verticale (Milaan)",
+        "Torre Velasca (Milaan)"
+      ]
+    },
+    "culture_and_events": {
+      "cultural_institutions": [
+        "MU",
+        "Plaza Futura",
+        "VPRO Medialab",
+        "De Ontdekfabriek"
+      ],
+      "events": [
+        "Dutch Design Week",
+        "FeelGood Markt",
+        "Concerten en beurzen in het Klokgebouw",
+        "Grote evenementen op het Ketelhuisplein"
+      ]
+    },
+    "sports_and_urban_life": {
+      "urban_sports": [
+        "Skaten",
+        "BMX",
+        "Boulderen",
+        "Bootcamp"
+      ],
+      "sports_cluster": {
+        "building": "SX",
+        "focus": "Sport, marketing en media"
+      }
+    },
+    "light_and_design_heritage": {
+      "lighting_projects": [
+        {
+          "name": "Light-S",
+          "award": "Auroralia Award 2014"
+        },
+        {
+          "name": "Fakkel",
+          "artist": "Har Hollands"
+        },
+        {
+          "name": "Crystal",
+          "artist": "Daan Roosegaarde"
+        }
+      ],
+      "glow_festival": [
+        "Hoofdlocatie 2008",
+        "GLOW Next 2012-2015"
+      ]
+    },
+    "urban_axes_and_landmarks": {
+      "torenallee": {
+        "description": "Wandelboulevard met zichtlijn",
+        "connects": [
+          "Lichttoren",
+          "Wielewaal (voormalig landhuis Frits Philips)"
+        ]
+      },
+      "leidingstraat": {
+        "description": "Industrieel leidingnetwerk met tuinontwerp van Piet Oudolf en lichtontwerp van Har Hollands"
+      }
+    },
+    "relation_to_frits_philips": {
+      "personal_connection": [
+        "Werkte bij Philips op Strijp-S",
+        "Woonde nabij in De Wielewaal"
+      ],
+      "symbolic_role": "Strijp-S belichaamt de overgang van industriële maakstad naar creatieve kennisstad"
+    },
+
+  "context_zwaanstraat": {
+    "type": "urban_neighbourhood_context",
+    "name": "Zwaanstraat",
+    "location": {
+      "city": "Eindhoven",
+      "district": "Strijp",
+      "province": "Noord-Brabant",
+      "country": "Nederland"
+    },
+    "statistics": {
+      "population_2023": 1365,
+      "dwellings": 491,
+      "average_woz_value_eur": 588000,
+      "area_km2": 0.52
+    },
+    "urban_structure": {
+      "neighbourhood_origin": "Bestond uit twee industrieterreinen",
+      "main_axis": "Zwaanstraat",
+      "west_side": "Philips Complex R (Strijp-R / Strijp-III)",
+      "east_side": "Philips Complex T (Strijp-T / Strijp-II / De Beuk)"
+    },
+    "industrial_history": {
+      "philips_parks_sequence": "S – T – R (Strijp)",
+      "strijp_r": {
+        "type": "Voormalig Philips industrieterrein",
+        "primary_function": "Productie van beeldbuizen",
+        "period": "Jaren 60 van de 20e eeuw",
+        "historical_context": "Ontwikkeld in de periode waarin Frits Philips leiding gaf aan Philips",
+        "symbolic_value": "Laat-industriële fase van Philips in Eindhoven"
+      },
+      "strijp_t": {
+        "alias": "De Beuk",
+        "construction_period": "Jaren 40 en 50 van de 20e eeuw",
+        "current_function": "Bedrijventerrein",
+        "planning_status": "Bestemmingsplan Bedrijventerrein Zwaanstraat – Strijp T (2006)"
+      }
+    },
+    "redevelopment_strijp_r": {
+      "start_year": 2007,
+      "area_hectares": 18,
+      "architects_and_planners": [
+        "DiederenDirrix Architecten",
+        "Buro Lubbers"
+      ],
+      "planning_milestones": {
+        "2009": [
+          "Vaststelling Stedenbouwkundig Plan",
+          "Vaststelling Beeldkwaliteitplan"
+        ],
+        "2013": "Oplevering eerste nieuwbouwwoningen"
+      },
+      "heritage_preservation": [
+        "Garage- en portiersgebouw RF",
+        "Gebouw RK"
+      ],
+      "housing_program": {
+        "total_dwellings": 650,
+        "character": "Woonwijk geïntegreerd in bestaand industrieel erfgoed"
+      }
+    },
+    "cultural_recognition": {
+      "award": "Van Abbepenning",
+      "year_awarded": 2024,
+      "recipient": "Ontwikkelaar Amvest",
+      "awarded_by": "Henri van Abbestichting",
+      "jury_statement_summary": [
+        "Sterke stedenbouwkundige samenhang",
+        "Hoge architectonische kwaliteit",
+        "Goede afstemming tussen nieuwbouw en historisch erfgoed",
+        "Hoogwaardige inrichting van de openbare ruimte"
+      ]
+    },
+    "relation_to_frits_philips": {
+      "direct_link": [
+        "Strijp-R ontwikkeld tijdens zijn bestuursperiode",
+        "Focus op beeldbuisproductie als kerntechnologie"
+      ],
+      "symbolic_role": "Vertegenwoordigt de schaalvergroting en technologische volwassenheid van Philips onder Frits Philips"
+    },
+    "relation_to_eindhoven": {
+      "urban_significance": "Transformatie van monofunctioneel industriegebied naar geïntegreerde stadswijk",
+      "heritage_value": "Voorbeeld van zorgvuldig hergebruik van Philips-erfgoed"
+    },
+
+  "context_drents_dorp": {
+    "type": "urban_neighbourhood_context",
+    "name": "Drents Dorp",
+    "location": {
+      "city": "Eindhoven",
+      "district": "Strijp",
+      "wijk": "Halve Maan",
+      "province": "Noord-Brabant",
+      "country": "Nederland"
+    },
+    "statistics": {
+      "population_2023": 2420,
+      "dwellings": 1175,
+      "average_woz_value_eur": 334000,
+      "area_km2": 0.45
+    },
+    "origin_and_development": {
+      "construction_period": "Jaren 20 van de 20e eeuw",
+      "initiator": "Philips",
+      "purpose": "Huisvesting van arbeiders, voornamelijk afkomstig uit Drenthe",
+      "historical_context": "Snelle groei van Philips en tekort aan lokale arbeidskrachten"
+    },
+    "social_history": {
+      "migration_background": "Arbeidsmigranten uit Drenthe",
+      "housing_character": "Vooroorlogse, goedkope en kleine arbeiderswoningen",
+      "estimated_historic_housing_stock": "Ongeveer 1000 woningen",
+      "social_function": "Stabiele woonwijk voor Philips-medewerkers en hun gezinnen"
+    },
+    "urban_structure": {
+      "subareas": [
+        "Drents Dorp Noord",
+        "Drents Dorp Zuid",
+        "Drents Dorp Oost"
+      ],
+      "relation_to_strijp_r": "Strijp-R wordt in principe tot Drents Dorp gerekend, maar is nog in ontwikkeling"
+    },
+    "street_naming": {
+      "tree_references": [
+        "Eikenstraat",
+        "Wilgenstraat"
+      ],
+      "regional_references": "Veel straatnamen verwijzen naar plaatsen in Gelderland",
+      "naming_policy": "Gemeentelijk beleid om nieuwe buurten te vernoemen naar Nederlandse gemeenten",
+      "canadastraat_explanation": {
+        "origin": "Canadese populier",
+        "local_name": "Kanidas",
+        "economic_link": "Veel gebruikt in de Noord-Brabantse klompenindustrie"
+      }
+    },
+    "relation_to_philips": {
+      "direct_link": [
+        "Gebouwd door Philips als arbeiderswijk",
+        "Onderdeel van het paternalistische Philips-woningbeleid"
+      ],
+      "symbolic_role": "Voorbeeld van Philips’ zorg voor huisvesting en sociale stabiliteit van werknemers"
+    },
+    "relation_to_frits_philips": {
+      "indirect_link": [
+        "Wijk weerspiegelt de sociale structuur waarin Frits Philips opgroeide en werkte",
+        "Belangrijk onderdeel van het Philips-ecosysteem in Strijp"
+      ],
+      "narrative_value": "Verbeeldt de menselijke kant van Philips: wonen, werken en gemeenschap"
+    },
+    "relation_to_eindhoven": {
+      "urban_significance": "Vroege vorm van grootschalige arbeidershuisvesting",
+      "heritage_value": "Karakteristiek voor de industriële groei van Eindhoven in de 20e eeuw"
+    },
+    
+  "context_philips_verborgen_architectuur": {
+    "type": "thematic_heritage_context",
+    "theme": "Philips-architectuur buiten de fabrieken",
+    "city": "Eindhoven",
+    "historical_scope": "ca. 1907 – 1966",
+    "core_message": "Philips heeft het aanzicht van Eindhoven niet alleen bepaald met fabrieken en woonwijken, maar ook met onderwijs, sport, cultuur, hospitality en groenvoorzieningen",
+    "key_figures": [
+      "Anton Philips",
+      "Gerard Philips",
+      "Dirk Roosenburg",
+      "Louis Kalff",
+      "Leo de Bever",
+      "Johan Wilhelm Hanrath"
+    ],
+    "architectural_philosophy": {
+      "approach": "Integrale stadsontwikkeling",
+      "characteristics": [
+        "Functioneel maar representatief",
+        "Sterke aandacht voor welzijn van werknemers",
+        "Combinatie van industrie, cultuur, sport en natuur",
+        "Paternalistische maar vooruitstrevende visie"
+      ]
+    },
+    "buildings_and_places": [
+      {
+        "name": "Voormalige Philips Bedrijfsschool",
+        "address": "Kastanjelaan 1",
+        "year_completed": 1949,
+        "architect": "Dirk Roosenburg",
+        "original_function": "Bedrijfsopleidingen voor Philips-medewerkers",
+        "later_use": [
+          "Technisch Lyceum",
+          "ROC",
+          "Summa College"
+        ],
+        "current_use": "Wooncomplex (422 woningen) met horeca",
+        "narrative_value": "Opleiding als fundament van Philips’ succes"
+      },
+      {
+        "name": "Temporary Art Centre (TAC)",
+        "address": "Vonderweg 1",
+        "original_function": "Philips personeelswinkel",
+        "current_use": "Culturele broedplaats met ateliers en evenementen",
+        "relation_to_philips": "Voorziening voor werknemers buiten werktijd",
+        "narrative_value": "Van consumptie naar creatie"
+      },
+      {
+        "name": "Philips Stadion",
+        "address": "Frederiklaan 10",
+        "year_founded": 1910,
+        "original_function": "Sportpark voor Philipsdorp",
+        "current_use": "Voetbalstadion PSV (35.150 plaatsen)",
+        "narrative_value": "Sport als bindmiddel van de gemeenschap"
+      },
+      {
+        "name": "Villa De Laak",
+        "address": "Parklaan 99",
+        "year_built": 1907,
+        "architect": "Johan Wilhelm Hanrath",
+        "commissioned_by": "Anton Philips",
+        "landscape_architect": "Leonard Springer",
+        "function": "Privéwoning familie Philips",
+        "narrative_value": "Leven van de Philips-familie buiten de fabriek"
+      },
+      {
+        "name": "Pullman Eindhoven Cocagne",
+        "address": "Vestdijk 47",
+        "original_name": "Hotel Cocagne",
+        "purpose": "Ontvangst van internationale gasten",
+        "symbolism": "Luilekkerland als metafoor voor vooruitgang",
+        "narrative_value": "Philips als internationaal bedrijf"
+      },
+      {
+        "name": "Evoluon",
+        "address": "Noord Brabantlaan 1A",
+        "year_gifted": 1966,
+        "architects": [
+          "Louis Kalff",
+          "Leo de Bever"
+        ],
+        "original_function": "Technologiemuseum",
+        "current_use": "Congres- en evenementenlocatie",
+        "dimensions": {
+          "diameter_m": 77
+        },
+        "narrative_value": "Toekomstdenken en technologie voor iedereen"
+      },
+      {
+        "name": "Basisschool Reigerlaan",
+        "address": "Reigerlaan 3",
+        "year_opened": 1915,
+        "architect": "Johan Wilhelm Hanrath",
+        "supported_by": "Anton Philips",
+        "function": "Levensbeschouwelijk neutraal onderwijs",
+        "narrative_value": "Onderwijs voor een diverse gemeenschap"
+      },
+      {
+        "name": "Sterrenwacht Eindhoven",
+        "address": "Alberdingk Thijmlaan 3",
+        "year_founded": 1938,
+        "architect": "Louis Kalff",
+        "initiators": "Philips-medewerkers",
+        "location": "Stadswandelpark",
+        "narrative_value": "Wetenschap als hobby én inspiratie"
+      }
+    ],
+    "parks_and_landscape": [
+      {
+        "name": "Philips de Jonghpark",
+        "year_gifted": 1920,
+        "donors": [
+          "Anton Philips",
+          "Anna Philips-de Jongh"
+        ],
+        "function": "Openbaar park voor ontspanning"
+      },
+      {
+        "name": "Philips van Lenneppark",
+        "year_gifted": 1966,
+        "occasion": "75-jarig bestaan Philips"
+      },
+      {
+        "name": "Philips Fruittuin",
+        "period": "Jaren 30",
+        "original_function": "Werkverschaffingsproject",
+        "social_role": "Werkgelegenheid en voedselvoorziening tijdens crisisjaren"
+      }
+    ],
+    "relation_to_frits_philips": {
+      "context": "Deze gebouwen en parken vormden het Eindhoven waarin Frits Philips opgroeide, werkte en leiding gaf",
+      "narrative_angle": "Niet alleen fabrieken, maar een complete leefwereld"
+    },
+    "relation_to_eindhoven": {
+      "urban_impact": "Verspreide Philips-invloed door de hele stad",
+      "heritage_value": "Philips als onzichtbare stedenbouwkundige kracht"
+    },
+    "meta": {
+      "language": "nl",
+      "intended_use": [
+        "AI Frits thematische verhalen",
+        "Architectuurwandelingen",
+        "Educatieve content",
+        "Cultureel erfgoed"
+      ],
+      "source_note": "Gebaseerd op door gebruiker aangeleverde tekst"
+    }
+  }
+}
+  }
+  }
+  }}}}}

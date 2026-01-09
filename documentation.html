@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="description"
+			content="All semester documentation for the Eindhoven AI project (Talk to Frits)."
+		/>
+		<meta property="og:title" content="Project Documentation — Eindhoven AI" />
+		<meta property="og:url" content="URL_OF_THE_WEBSITE/documentation.html" />
+		<meta
+			name="keywords"
+			content="IxD, AI, Eindhoven, Frits Philips, Project Documentation"
+		/>
+		<title>Project Documentation — Eindhoven AI</title>
+		<link rel="icon" type="image/x-icon" href="static/images/favicon.png" />
+		<link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+		/>
+		<link rel="stylesheet" href="static/css/index.css" />
+		<link rel="stylesheet" href="static/css/documentation.css" />
+	</head>
+	<body>
+		<a class="back-home-btn" href="index.html">
+			<span class="icon">←</span>
+			<span>Back to Home</span>
+		</a>
+
+		<div id="header-placeholder"></div>
+
+		<!-- Hero Section -->
+		<section class="doc-hero">
+			<div class="wrapper">
+				<h1>Project Documentation</h1>
+				<h2>Talk to Frits — Semester Overview</h2>
+				<p>
+					This page provides access to all project documentation organized by phase.
+					Explore our research, concepts, validation work, and planning artifacts from the semester.<br>
+                    (Click the timeline to jump to a section.)
+				</p>
+			</div>
+		</section>
+
+		<!-- Timeline -->
+		<section class="timeline-container">
+			<div class="wrapper">
+				<nav class="timeline">
+					<a href="#ideation" class="timeline-item">
+						<div class="timeline-dot"></div>
+						<span class="timeline-label">Ideation</span>
+					</a>
+					<a href="#proof-of-concepting" class="timeline-item">
+						<div class="timeline-dot"></div>
+					<span class="timeline-label">POC's</span>
+					</a>
+					<a href="#working-concept" class="timeline-item">
+						<div class="timeline-dot"></div>
+					<span class="timeline-label">Concept</span>
+					</a>
+					<a href="#additional-researching" class="timeline-item">
+						<div class="timeline-dot"></div>
+					<span class="timeline-label">Research</span>
+					</a>
+					<a href="#refinement-testing" class="timeline-item">
+						<div class="timeline-dot"></div>
+					<span class="timeline-label">Testing</span>
+					</a>
+					<a href="#finalizing-project" class="timeline-item">
+						<div class="timeline-dot"></div>
+					<span class="timeline-label">Delivery</span>
+					</a>
+				</nav>
+			</div>
+		</section>
+
+		<div class="timeline-spacer"></div>
+
+		<!-- Ideation Phase -->
+		<section id="ideation" class="phase-section">
+			<div class="wrapper">
+				<div class="phase-header">
+					<h2>Ideation</h2>
+					<h3>Brainstorming & Early Concepts</h3>
+				</div>
+				<p class="phase-description">
+					In the ideation phase, we explored diverse concepts for bringing Eindhoven's heritage to life through AI.
+					We facilitated collaborative brainstorming sessions, mapped ideas visually, and prioritized features using the MoSCoW method.
+				</p>
+				<div class="link-cards"></div>
+			</div>
+		</section>
+
+		<!-- Proof of Concepting Phase -->
+		<section id="proof-of-concepting" class="phase-section">
+			<div class="wrapper">
+				<div class="phase-header">
+				<h2>Proof of Concept</h2>
+					<h3>Prototype & Feasibility</h3>
+				</div>
+				<p class="phase-description">
+					We developed multiple one-pagers and prototypes to explore feasibility for interactive AI experiences in Eindhoven.
+					Each concept presented a unique approach to engaging the public through technology.
+				</p>
+				<div class="link-cards"></div>
+			</div>
+		</section>
+
+        		<!-- Working Concept Phase -->
+		<section id="working-concept" class="phase-section">
+            <div class="wrapper">
+				<div class="phase-header">
+					<h2>Working Concept</h2>
+					<h3>Integrated Experience Iteration</h3>
+				</div>
+				<p class="phase-description">
+					We iterated towards a cohesive, working concept by integrating findings,
+					refining interaction flows, and establishing core behaviors of the experience.
+				</p>
+				<div class="link-cards"></div>
+			</div>
+		</section>
+
+        <!-- Additional Researching Phase -->
+        <section id="additional-researching" class="phase-section">
+            <div class="wrapper">
+                <div class="phase-header">
+                    <h2>Research</h2>
+                    <h3>Deep Dives & Context</h3>
+                </div>
+                <p class="phase-description">
+                    We expanded our understanding of Frits Philips' context and related domains,
+                    conducting deeper literature studies, competitive analyses, and stakeholder mapping to refine our direction.
+                </p>
+                <div class="link-cards"></div>
+            </div>
+        </section>
+
+		<!-- Refinement & Testing Phase -->
+		<section id="refinement-testing" class="phase-section">
+			<div class="wrapper">
+				<div class="phase-header">
+				<h2>Testing</h2>
+				<h3>User Feedback & Iteration</h3>
+				</div>
+				<p class="phase-description">
+					We validated our concept through user testing, gathered survey data, and maintained regular communication with stakeholders.
+					This phase included standups, retrospectives, legal consultations, and iterative refinement based on feedback.
+				</p>
+				<div class="link-cards"></div>
+			</div>
+		</section>
+
+		<!-- Finalizing Project Phase -->
+		<section id="finalizing-project" class="phase-section">
+			<div class="wrapper">
+				<div class="phase-header">
+				<h2>Delivery</h2>
+				<h3>Final Deliverables</h3>
+				</div>
+				<p class="phase-description">
+					We prepared final deliverables, documentation, and wrap-up materials,
+					ensuring clear ownership, milestone tracking, and structured workflows throughout the semester.
+				</p>
+				<div class="link-cards"></div>
+			</div>
+		</section>
+
+		<script>
+			// Timeline active state on scroll
+			const timelineItems = document.querySelectorAll('.timeline-item');
+			const sections = document.querySelectorAll('.phase-section');
+			const timelineSection = document.querySelector('.timeline-container');
+			const timelineSpacer = document.querySelector('.timeline-spacer');
+			let timelineOffsetTop = 0;
+
+			function setActiveTimeline() {
+				let currentSection = '';
+				sections.forEach(section => {
+					const sectionTop = section.offsetTop;
+					if (window.scrollY >= sectionTop - 400) {
+						currentSection = section.getAttribute('id');
+					}
+				});
+
+				timelineItems.forEach(item => {
+					item.classList.remove('active');
+					if (item.getAttribute('href') === `#${currentSection}`) {
+						item.classList.add('active');
+					}
+				});
+			}
+
+			function handleTimelineStick() {
+				if (!timelineSection) return;
+				const shouldStick = window.scrollY >= timelineOffsetTop;
+				if (shouldStick) {
+					timelineSection.classList.add('is-fixed');
+					if (timelineSpacer) timelineSpacer.style.display = 'block';
+				} else {
+					timelineSection.classList.remove('is-fixed');
+					if (timelineSpacer) timelineSpacer.style.display = 'none';
+				}
+			}
+
+			function measureTimeline() {
+				if (!timelineSection) return;
+				timelineSection.classList.remove('is-fixed');
+				if (timelineSpacer) timelineSpacer.style.display = 'none';
+				timelineOffsetTop = timelineSection.offsetTop;
+				if (timelineSpacer) {
+					timelineSpacer.style.height = `${timelineSection.offsetHeight}px`;
+				}
+				handleTimelineStick();
+			}
+
+			window.addEventListener('scroll', () => {
+				handleTimelineStick();
+				setActiveTimeline();
+			});
+
+			window.addEventListener('resize', measureTimeline);
+			window.addEventListener('load', () => {
+				// Delay measurement to account for async header loading
+				setTimeout(() => {
+					measureTimeline();
+					setActiveTimeline();
+				}, 100);
+			});
+
+			// Re-measure after components load (header/footer fetched)
+			document.addEventListener('components:header-loaded', () => {
+				measureTimeline();
+				setActiveTimeline();
+			});
+			document.addEventListener('components:footer-loaded', () => {
+				measureTimeline();
+				setActiveTimeline();
+			});
+		</script>
+
+		<div id="footer-placeholder"></div>
+		<script src="static/js/components.js"></script>
+		<script src="static/js/cards-data.js"></script>
+	</body>
+</html>
