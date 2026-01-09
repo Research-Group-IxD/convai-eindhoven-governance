@@ -3,6 +3,9 @@ import json
 import os
 import glob
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()  # 
 
 try:
     from portkey_ai import Portkey
@@ -168,9 +171,18 @@ def main():
     knowledge = load_knowledge()
     system_prompt = build_system_prompt(config, knowledge)
 
-# waarom stond hier een API key?
-    api_key = config.get("api_key", "")
+    api_key = os.getenv("PORTKEY_API_KEY") or config.get("api_key")
 
+    # 2. Harde stop als er geen key is
+    if not api_key:
+        console.print("\n[bold red]⛔ CRITICALE FOUT: Geen API Key gevonden![/bold red]")
+        console.print("[yellow]De applicatie kan niet starten zonder API sleutel.[/yellow]")
+        console.print("[red]Lees de README.md voor instructies over API sleutels.[/red]")
+        console.print("1. Maak een bestand genaamd [bold].env[/bold] in deze map.")
+        console.print("2. Zet daar in: [bold]PORTKEY_API_KEY=jouw-sleutel-hier[/bold]")
+        sys.exit(1)
+        
+        
     client = Portkey(
         api_key=api_key, base_url="https://api.portkey.ai/v1", mode="fallback"
     )
@@ -178,6 +190,8 @@ def main():
     model_id = config.get("model_id", "mistral-medium-2505")
     console.print(f"[dim]Model: {model_id}[/dim]\n")
     console.print("[green]Frits staat op de Markt en kijkt om zich heen...[/green]\n")
+    
+    os.makedirs("static/outputs", exist_ok=True)
 
     # Initialize TTS Handler
     tts_handler = None
