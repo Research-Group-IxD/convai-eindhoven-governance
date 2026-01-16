@@ -140,7 +140,7 @@ const phaseCards = {
 		{
 			title: 'Code Repository',
 			description: 'GitHub project containing source code, documentation, and project files.',
-			href: 'https://github.com/SuperZeekoe/convai-eindhoven-governance'
+			href: 'https://github.com/Research-Group-IxD/convai-eindhoven-governance'
 		}
 	]
 };
