@@ -149,8 +149,11 @@ const phaseCards = {
 function renderPhaseCards(phaseId) {
 	const cards = phaseCards[phaseId];
 	if (!cards) return '';
-	
-	return cards.map(card => `
+
+	const linkedCards = cards.filter(card => card.href && card.href !== '#');
+	if (linkedCards.length === 0) return '';
+
+	return linkedCards.map(card => `
 		<a href="${card.href}" target="_blank" class="link-card">
 			<div class="link-card-content">
 				<h4 class="link-card-title">${card.title}</h4>
