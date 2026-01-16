@@ -5,51 +5,51 @@ const phaseCards = {
 		{
 			title: 'Ideation Brainstorm Board',
 			description: 'Visual whiteboard capturing initial concept exploration and team input.',
-			href: '#'
+			href: 'static/pdfs/ideation/ideation document.pdf'
 		},
 		{
 			title: 'Concept Plan',
 			description: 'Early project scope definition and concept framing document.',
-			href: '#'
+			href: 'static/pdfs/ideation/Eindhoven_AI_Project_Proposal.pdf'
 		}
 	],
 	'proof-of-concepting': [
 		{
 			title: 'Mood of the Day',
 			description: 'Interactive installation reflecting the city\'s current emotional state through AI.',
-			href: '#'
+			href: 'static/pdfs/poc/Concept Eindhoven AI.pdf'
 		},
 		{
 			title: 'Frits is Alive',
 			description: 'Conversational AI agent embodying Frits Philips\' voice and knowledge.',
-			href: '#'
+			href: 'static/pdfs/poc/Frits is alive.pdf'
 		},
 		{
 			title: 'OakAI',
 			description: 'Nature-based interactive experience connecting environmental storytelling with AI.',
-			href: '#'
+			href: 'static/pdfs/poc/OakAI.pdf'
 		},
 		{
 			title: 'Park Whispers',
 			description: 'Public space installation allowing dialogue with place-based AI personas.',
-			href: '#'
+			href: 'static/pdfs/poc/ParkWhispers_concept.pdf'
 		},
 		{
 			title: 'Gnome Hunt',
 			description: 'Gamified city exploration using AR and AI-guided storytelling.',
-			href: '#'
+			href: 'static/pdfs/poc/GnomeHunt.pdf'
 		}
 	],
 	'working-concept': [
 		{
 			title: 'Experience Flow',
 			description: 'Core interaction flow and integrated concept behaviors.',
-			href: '#'
+			href: 'static/pdfs/workingconcept/Frits ideas.pdf'
 		},
 		{
 			title: 'Prototype Demo',
 			description: 'Demonstration of the working concept with key interactions.',
-			href: '#'
+			href: 'static/pdfs/workingconcept/demo_frits.mp4'
 		}
 	],
 	'additional-researching': [
@@ -61,81 +61,61 @@ const phaseCards = {
 		{
 			title: 'Competitive Analysis',
 			description: 'Examination of comparable interactive installations and their strengths/gaps.',
-			href: '#'
+			href: 'static/pdfs/research/Competitive Analysis.pdf'
 		},
 		{
-			title: 'Literature Study',
+			title: 'Literature Study Frits',
 			description: 'Background research on Frits Philips, AI in cultural heritage, and conversational design.',
-			href: '#'
+			href: 'static/pdfs/research/Literature Study Frits.pdf'
 		},
 		{
-			title: 'Target Audience & Personas',
-			description: 'User profiles and needs analysis for residents and tourists engaging with the installation.',
-			href: '#'
+			title: 'Frits deepfake Research',
+			description: 'Exploration of deepfake technology for recreating Frits Philips\' likeness and voice.',
+			href: 'static/pdfs/research/Frits Deepfake research.pdf'
+		},
+		{
+			title: 'Location Research',
+			description: 'Study of potential installation sites within Eindhoven and their contextual relevance.',
+			href: 'static/pdfs/research/Location Research.pdf'
+		},
+		{
+			title: 'Research document',
+			description: 'Comprehensive summary of all research findings and references of the research phase.',
+			href: 'static/pdfs/research/Research Document.pdf'
 		}
 	],
 	'refinement-testing': [
 		{
 			title: 'User Test Report',
 			description: 'Qualitative findings from live testing sessions with public participants.',
-			href: '#'
-		},
-		{
-			title: 'Event Poster Feedback',
-			description: 'Visual communication testing and public response to event materials.',
-			href: '#'
-		},
-		{
-			title: 'Survey Results',
-			description: 'Quantitative and qualitative insights from post-interaction surveys.',
-			href: '#'
-		},
-		{
-			title: 'Standups',
-			description: 'Team coordination notes and sprint check-ins throughout the semester.',
-			href: '#'
+			href: 'static/pdfs/refinement/test_report.pdf'
 		},
 		{
 			title: 'Stakeholder Meetings',
 			description: 'Insights and guidance from external partners and advisors.',
-			href: '#'
-		},
-		{
-			title: 'Retro Verslag',
-			description: 'Team retrospective reflecting on process, learnings, and improvements.',
-			href: '#'
+			href: 'static/pdfs/refinement/stakeholder_meetings.pdf'
 		},
 		{
 			title: 'Legal Meeting',
 			description: 'Compliance review covering data privacy, image rights, and ethical AI use.',
-			href: '#'
+			href: 'static/pdfs/refinement/legal_meeting.pdf'
 		}
 	],
 	'finalizing-project': [
-		{
-			title: 'Final Planning',
-			description: 'Master schedule with task assignments and milestone dates.',
-			href: '#'
-		},
 		{
 			title: 'Next Steps',
 			description: 'Prioritized actions and immediate follow-ups post-validation phase.',
 			href: '#'
 		},
 		{
-			title: 'Project Proposal',
-			description: 'Initial project scope, intent, and framework submitted at project start.',
-			href: '#'
-		},
-		{
 			title: 'Git Repo Organization',
 			description: 'Branch model, role definitions, and repository structure overview.',
-			href: '#'
+			href: 'README.md'
 		},
 		{
 			title: 'Git Workflow Guide',
 			description: 'Branching strategy, PR process, and collaboration guidelines for the team.',
-			href: 'GIT_WORKFLOW_GUIDE.md'
+			href: ''
 		},
 		{
 			title: 'Code Repository',
