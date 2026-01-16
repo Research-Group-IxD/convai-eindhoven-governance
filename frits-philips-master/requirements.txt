@@ -5,6 +5,8 @@ requests
 portkey-ai
 rich
 beautifulsoup4
+python-dotenv
+scipy
 pypdf
 SpeechRecognition
 streamlit

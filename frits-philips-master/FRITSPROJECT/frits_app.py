@@ -10,9 +10,14 @@ import speech_recognition as sr  # De krachtige luister-bibliotheek
 from portkey_ai import Portkey
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+from dotenv import load_dotenv
 from tts_handler import FritsTTSHandler, streamlit_synthesize
 from pathlib import Path
 from scipy.io import wavfile
+
+# Probeer .env te laden uit dezelfde map als dit script
+env_path = Path(__file__).parent / ".env"
+load_dotenv(dotenv_path=env_path)
 
 # --- 1. FUNCTIES (BACKEND) ---
 
@@ -206,8 +211,12 @@ if "client" not in st.session_state:
         knowledge, file_list = load_knowledge()
         system_prompt = build_system_prompt(config, knowledge)
 
-        api_key = config.get("api_key")
+        api_key = os.getenv("PORTKEY_API_KEY") or config.get("api_key")
         model_id = config.get("model_id", "mistral-medium-2505")
+
+        if not api_key:
+            st.error("Geen API Key gevonden! Zorg voor een .env bestand met PORTKEY_API_KEY=...")
+            st.stop()
 
         st.session_state.client = Portkey(
             api_key=api_key, base_url="https://api.portkey.ai/v1", mode="fallback"

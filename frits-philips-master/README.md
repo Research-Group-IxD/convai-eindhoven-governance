@@ -2,45 +2,61 @@
 
 Welcome! This project combines the **Frits AI chatbot** with **Chatterbox text-to-speech** for a complete voice-enabled conversational AI.
 
-## 📋 What's Included
+## 📋 Overview
 
-This monorepo contains:
+This project leads the "ConvAI Eindhoven Governance" assignment, creating a digital twin of Frits Philips to interact with citizens about Eindhoven's future and history. It integrates:
 
-1. **FRITSPROJECT/** - Frits AI with integrated TTS
-   - `frits.py` - CLI version with voice output
-   - `frits_app.py` - Streamlit web app with voice output  
-   - `tts_handler.py` - TTS integration module (NEW)
-   - `frits_config.json` - Personality configuration
+- **Frits AI**: Keeps the warm, down-to-earth personality of Frits Philips using an LLM.
+- **Chatterbox TTS**: Provides voice synthesis to make Frits actually speak.
+- **Multilingual Support**: Switch seamlessly between Dutch and English interactions.
 
-2. **chatterbox-master/** - TTS engine
-   - Text-to-speech synthesis
-   - Voice cloning support
-   - Multilingual capabilities
+## ⚠️ Important Installation Info
 
-3. **Documentation** (NEW)
-   - `QUICKSTART.md` - Get started in 3 steps
-   - `INTEGRATION_GUIDE.md` - Detailed setup & configuration
-   - `ARCHITECTURE.md` - System design & data flow
-   - `INTEGRATION_COMPLETE.md` - Changes summary
+**API INFORMATION**: To procure a chat.fontysict.nl API key, you will have to request one from the ISSD Support Desk. More information can be found here: https://fhict.instructure.com/courses/14338/pages/getting-started-and-access-guide?module_item_id=1321436
 
-4. **Testing & Examples** (NEW)
-   - `test_integration.py` - Verify installation
-   - `examples_tts.py` - Usage examples
+**Heavy Download Warning**: The installation process involves downloading **PyTorch** and related audio libraries, which totals approximately **~2GB of data**.
 
-## 🚀 Quick Start (3 Steps)
+- Python < 3.10 required for Chatterbox-tts usage, anything above 3.10 won't work.
+- Portkey API key
+- ~4GB ram, ~2GB disk space download, fast GPU for faster audio generation
+- Ensure a stable internet connection.
+- Allow 5-15 minutes for the initial install.
+
+## 🚀 Quick Start
+
+### Option 1: Easy Install ⚡
+
+**Windows:**
+
+1. Double-click **`run_server.bat`**
+
+**Mac / Linux:**
+
+1. Open terminal
+2. Run: `bash run_server.sh`
+
+Wait for the setup to complete (it will install everything for you). The application will launch automatically in your browser.
+
+_Note: These scripts automatically handle Python detection, virtual environment creation, and the ~2GB dependency download._
+
+### Option 2: Manual Setup (3 Steps)
 
 ### 1. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
-_Takes 5-10 minutes for first install (downloads PyTorch + models)_
+
+_Note: This step downloads the ~2GB dependencies._
 
 ### 2. Verify Setup (Optional)
+
 ```bash
 python test_integration.py
 ```
 
 ### 3. Run the App
+
 ```bash
 # Web interface (recommended)
 streamlit run FRITSPROJECT/frits_app.py
@@ -49,169 +65,37 @@ streamlit run FRITSPROJECT/frits_app.py
 python FRITSPROJECT/frits.py
 ```
 
-## ✨ What's New (Integration Complete!)
+## 4. After installation
 
-| Component | Status | What It Does |
-|-----------|--------|-------------|
-| **TTS Handler** | ✅ NEW | Wraps Chatterbox for easy integration |
-| **Voice Output** | ✅ NEW | Frits responses are now spoken |
-| **Audio Playback** | ✅ NEW | Streamlit audio player + file save |
-| **Device Auto-Detection** | ✅ NEW | GPU/CPU/MPS automatic selection |
-| **Documentation** | ✅ NEW | 4 comprehensive guides + examples |
+Make sure to put the API key for chat.fontysict.nl in the frits_config.json, located under frits-philips-master/FRITSPROJECT/
 
-## 📚 Documentation
-
-| Document | Purpose | Audience |
-|----------|---------|----------|
-| `QUICKSTART.md` | Get running fast | Everyone (start here!) |
-| `INTEGRATION_GUIDE.md` | Complete setup guide | Users needing configuration |
-| `ARCHITECTURE.md` | System design | Developers |
-| `INTEGRATION_COMPLETE.md` | What changed | Project managers |
-
-## 🎯 How It Works
+## 🏗️ Architecture
 
 ```
-You: "Hallo Frits!"
-        ↓
-    Frits AI (LLM)
-        ↓
-Response: "Hallo! Hoe gaat het?"
-        ↓
-    Chatterbox TTS
-        ↓
-🔊 "Hallo! Hoe gaat het?" (spoken)
+┌─────────────────┐       ┌──────────────┐       ┌─────────────────┐
+│   User Input    │  ──►  │   Frits AI   │  ──►  │  Text Response  │
+└─────────────────┘       └──────────────┘       └────────┬────────┘
+                                                         │
+┌─────────────────┐       ┌──────────────┐               │
+│  Audio Output   │  ◄──  │  TTS Engine  │  ◄────────────┘
+└─────────────────┘       └──────────────┘
 ```
 
-## 💡 Key Features
+## 📂 Key Files & Structure
 
-✅ **Text-to-Speech** - Automatic voice synthesis  
-✅ **Voice Cloning** - Use your own voice (optional)  
-✅ **Emotion Control** - Adjust expressiveness  
-✅ **GPU Support** - Fast inference on CUDA/MPS  
-✅ **Web & CLI** - Two interfaces included  
-✅ **Multilingual** - 23 languages supported (optional)  
-✅ **File Export** - Save audio files  
+- **`FRITSPROJECT/`**: Main application code.
+  - `frits_app.py`: Streamlit interface.
+  - `tts_handler.py`: TTS wrapper.
+  - `frits_config.json`: Persona settings.
+- **`chatterbox-master/`**: Local TTS engine source.
+- **`server.py`**: Standalone TTS API server.
+- **`Documentation/`**: Detailed guides (`QUICKSTART.md`, `INTEGRATION_GUIDE.md`, etc.).
 
-## 🔧 Technical Stack
+## 🔧 Troubleshooting
 
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| **Interface** | Streamlit / Rich | User interaction |
-| **LLM** | Portkey + Mistral/Claude | Text generation |
-| **TTS** | Chatterbox (ResembleAI) | Speech synthesis |
-| **ML Framework** | PyTorch | Model inference |
-| **Audio** | Torchaudio, Librosa | Audio processing |
-
-## 📁 Project Structure
-
-```
-.
-├── FRITSPROJECT/
-│   ├── frits.py                (Updated - with TTS)
-│   ├── frits_app.py           (Updated - with TTS)
-│   ├── tts_handler.py         (NEW - Main integration)
-│   ├── frits_config.json      (Configuration)
-│   └── kennis/                (Knowledge documents)
-│
-├── chatterbox-master/         (TTS engine)
-│   └── src/chatterbox/        (Models & code)
-│
-├── static/
-│   └── outputs/               (Generated audio files)
-│
-├── Documentation/
-│   ├── QUICKSTART.md          (Start here!)
-│   ├── INTEGRATION_GUIDE.md   (Detailed setup)
-│   ├── ARCHITECTURE.md        (System design)
-│   └── INTEGRATION_COMPLETE.md (Changes)
-│
-├── test_integration.py        (Verification tests)
-├── examples_tts.py            (Usage examples)
-├── requirements.txt           (Dependencies)
-└── README.md                  (This file)
-```
-
-## ⚙️ Installation Details
-
-### Requirements
-- Python 3.8+
-- 4GB+ RAM
-- GPU recommended (optional)
-
-### Install Steps
-
-1. **Clone/Extract** the project
-2. **Navigate** to project directory
-3. **Install**: `pip install -r requirements.txt`
-4. **Run**: `streamlit run FRITSPROJECT/frits_app.py`
-
-## 🧪 Testing
-
-### Quick Test
-```python
-from FRITSPROJECT.tts_handler import FritsTTSHandler
-handler = FritsTTSHandler()
-wav, sr, path = handler.synthesize("Hallo!")
-```
-
-### Full Verification
-```bash
-python test_integration.py
-```
-
-### Run the Apps
-```bash
-# Web App
-streamlit run FRITSPROJECT/frits_app.py
-
-# CLI App  
-python FRITSPROJECT/frits.py
-```
-
-## 🎨 Customization
-
-### Adjust Voice Parameters
-Edit `frits_app.py` or `frits.py` to change:
-- **Emotion** (exaggeration: 0.0-1.0)
-- **Voice variation** (temperature: 0.0-1.0)
-- **Output location** (path configuration)
-
-### Use Custom Voice
-Provide your own reference audio:
-```python
-handler.synthesize(
-    "Your text here",
-    audio_prompt_path="your_voice.wav",
-    exaggeration=0.6
-)
-```
-
-### Enable Multilingual
-```python
-handler = FritsTTSHandler(
-    device="auto",
-    use_multilingual=True
-)
-```
-
-## 🐛 Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| "No module named..." | Run: `pip install -r requirements.txt` |
-| "CUDA out of memory" | Use CPU: Change device to "cpu" |
-| No audio playback | Check browser permissions & `static/outputs/` folder |
-| Slow startup | First run downloads models (~2GB). Next runs are faster. |
-
-See `INTEGRATION_GUIDE.md` for more troubleshooting.
-
-## 📖 Next Steps
-
-1. **Read**: Start with `QUICKSTART.md`
-2. **Install**: Follow installation steps above
-3. **Test**: Run `python test_integration.py`
-4. **Use**: Run the app and chat!
-5. **Customize**: See `examples_tts.py` for advanced usage
+- **Slow First Run?** Normal behaviour; it's downloading the model weights.
+- **No Sound?** Check your browser permissions for auto-play audio.
+- **Import Errors?** Ensure `chatterbox-master` is in the root directory.
 
 ## 🤝 Credits
 
@@ -223,17 +107,10 @@ See `INTEGRATION_GUIDE.md` for more troubleshooting.
 ## 📄 License
 
 See individual component licenses:
+
 - Chatterbox: Check repository
 - Streamlit: Apache 2.0
 - PyTorch: BSD
-
-## 🆘 Support
-
-- **Setup Issues**: See `QUICKSTART.md`
-- **Configuration**: See `INTEGRATION_GUIDE.md`
-- **Technical Details**: See `ARCHITECTURE.md`
-- **Examples**: See `examples_tts.py`
-- **Testing**: Run `test_integration.py`
 
 ---
 
@@ -244,4 +121,3 @@ See individual component licenses:
 Start with `QUICKSTART.md` for the fastest path to a working system.
 
 Enjoy! 🎤🎩
-
