@@ -6,7 +6,7 @@ import html
 import time
 import io
 import numpy as np
-import speech_recognition as sr  # De krachtige luister-bibliotheek
+import speech_recognition as sr  
 from portkey_ai import Portkey
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
@@ -15,7 +15,7 @@ from tts_handler import FritsTTSHandler, streamlit_synthesize
 from pathlib import Path
 from scipy.io import wavfile
 
-# Probeer .env te laden uit dezelfde map als dit script
+# loads env from file in directory
 env_path = Path(__file__).parent / ".env"
 load_dotenv(dotenv_path=env_path)
 
